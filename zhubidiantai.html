@@ -1,0 +1,1076 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>网易云音乐</title>
+	<link rel="icon" href="favicon.ico">
+	<style>
+/*======css reset=======*/
+	*{ margin:0; padding:0;}
+	ul,ol,li{ list-style: none;}
+	img{ display: block;}
+	a{ text-decoration: none; color:black;}
+	body,h1,h2,h3,h4{ font-size: 12px; font-weight: normal; font-family: "微软雅黑";}
+
+/*======css common=======*/
+	.clear:after{ display: block; content:""; clear:both;}
+	.l{ float: left;}
+	.r{ float: right;}
+	.container{ width:980px; margin: 0 auto;}
+	.container-fluid{ width:100%; }
+/*======css head=======*/
+ 	#head{width:100%;}
+	.head_1{height: 69px;background:#242424;border-bottom: 1px #000 solid;}
+	.head_1 .head1_content{width: 1098px;height:69px; margin:0 auto;}
+    .head1_content .head1_logo{width:175px;height:69px;height: 100%; background: url(img01/网易云音乐.jpg) no-repeat 0px 22px;}
+    .head1_content .head1_logo a{width: 175px;height: 100%;float: left;padding-right: 24px;text-indent: -9999px;}
+  	.head1_content .head1_liebiao1{}
+    .head1_liebiao1 li{float: left;position: relative;}
+  	.head1_liebiao1 li .frist{position: relative;}
+    .head1_liebiao1 .li_1 { width: 94px;height: 69px;color: #b7b7b7;font-weight: bold;cursor:pointer;text-align: center;}
+    .head1_liebiao1 .li_2 { width: 93px;height: 69px;color: #b7b7b7;font-weight: bold;cursor:pointer;text-align: center;}
+    .head1_liebiao1 .li_3 { width: 67px;height: 69px;color: #b7b7b7;font-weight: bold;cursor:pointer;text-align: center;}
+    .head1_liebiao1 .li_4 { width: 65px;height: 69px;color: #b7b7b7;font-weight: bold;cursor:pointer;text-align: center;}
+    .head1_liebiao1 .li_5 { width: 81px;height: 69px;color: #b7b7b7;font-weight: bold;cursor:pointer;text-align: center;}
+    .head1_liebiao1 .li_6 { width: 105px;height: 69px;color: #b7b7b7;font-weight: bold;cursor:pointer;text-align: center;}
+    .head1_liebiao1 li a{height: 69px; line-height: 69px;color:#cccccc;}
+    .head1_liebiao1 li.frist:before{width: 12px;height: 16px;content: "";display: block; background: url(img01/精灵图.png) no-repeat -226px 0px;position: absolute;left: 41px;bottom:-11px;
+   		 }
+    .head1_liebiao1 li:hover{background-color:black;}
+    .head1_liebiao1 li a:hover{color: white;}
+    .head1_liebiao1 li.frist a{color: white;}
+    .head1_biaodan{position: relative;}
+    .head1_biaodan .img{position: absolute;left:0px;top: 22px;}  
+    .head1_biaodan1 {margin-left: 87px;margin-top: 19px;position: relative;}
+    .head1_biaodan1 input{width: 154px;height: 31px;text-indent: 29px;border-radius: 20px}
+    .head1_biaodan1 img{position: absolute;left:10px;bottom: 9px;}
+    .img2{position: relative;}
+    .img2 a{display: block;font-size: 10px;}
+    .img2 img{position: absolute;left: 12px;top: 19px;}
+    .img2 p{position: relative;left: 43px;top: 26px; color:#cccccc;}
+    #head a :hover{color: white;}
+    .denglu1{overflow: hidden;  width:52px; height:25px;margin-top: 27px;position: relative;}
+    .denglu1 .denglu2{ font-size: 10px;line-height:14px;padding-right: 26px;position: relative;width:26px;}
+    .denglu1 .denglu2 a{color:#787878;}
+    .denglu1 .denglu2:hover{text-decoration:underline;}
+    .denglu1 .denglu2:after{width: 12px;height: 7px; content: "";display: block;background: url(img01/精灵图.png) no-repeat -228px -60px;position: absolute; left:38px;top:3px;}
+    .denglu1 .denglu3 a{color:#787878;}
+    .denglu1:hover{height: auto;overflow:visible}             
+    .denglu1 ul{line-height: 38px;background:#2b2b2b ;width: 158px;display: block;position: absolute;top: 30px;left: -67px}
+    .denglu1 ul li{height:38px;font-size: 12px;border-bottom: 1px solid black;border-right: 1px solid black;border-left: 1px solid black;
+               }
+    .denglu1 ul li{position: relative;float: left;width: 156px}
+    .denglu1 li a{float: left;position: relative;padding-left:44px;}
+    .denglu1 .denglu4 a:before{width:10px;height: 14px; content: "";display: block;background: url(img01/toplist.png) no-repeat -3px -2px;position:absolute;left: 20px;top:12px;}
+    .denglu1 .denglu8 a:before{width:18px;height: 15px; content: "";display: block;background: url(img01/toplist.png) no-repeat -20px -22px;position:absolute;left: 18px;top:13px;}
+    .denglu1 .denglu7 a:before{width:12px;height: 15px; content: "";display: block;background: url(img01/toplist.png) no-repeat -2px -42px;position:absolute;left: 19px;top:12px;}
+    .denglu1 .denglu5 a:before{width:14px;height: 16px; content: "";display: block;background: url(img01/toplist.png) no-repeat -20px -41px;position:absolute;left: 18px;top:12px;}
+    .denglu1 .denglu6 a:before{width:16px;height: 13px; content: "";display: block;background: url(img01/toplist.png) no-repeat 0px -23px;position:absolute;left: 17px;top:13px;}
+    .denglu1 ul li:hover{background: #353535}
+    .denglu1 ul  a:hover{color:white;}
+    #head_2{background: #c20c0c;width: 100%;height: 34px;}
+    .head_3{width: 1098px;height:100%; margin: 0 auto;}
+    .head_3 ul{margin-left: 197px;}
+    .head_3 li{float: left;font-size: 12px;line-height: 20px;padding-left: 12px;padding-right: 13px;margin-right: 34px;margin-top: 7px}
+    .head_3 ul a{color:#ffffff;}
+    .head_3 ul .active{background: #9b0909;border-radius:20px;}
+    .head_3 .active a{color: white}
+    .head_3 ul li:hover{background: #9b0909}
+/*======css nav=======*/
+	#djradio{background:#f5f5f5;overflow:hidden;}
+	#djradio #djradio_main{background:white;border-left:solid 1px #d3d3d3;border-right:solid 1px #d3d3d3;}
+	#djradio .nav{height:234px;overflow:hidden;}
+	#djradio .nav .nav_box{width:900px;height:194px;margin-left:40px;margin-top:40px;position:relative;}
+	#djradio .nav .nav_box .arrowl{width:10px;height:20px;background:url(img/radio_slide.png) no-repeat -4px -35px;position:absolute;left:-22px;top:50%;margin-top:-10px;opacity:0.08;cursor:pointer;}
+	#djradio .nav .nav_box .arrowr{width:10px;height:20px;background:url(img/radio_slide.png) no-repeat -35px -35px;position:absolute;right:-22px;top:50%;margin-top:-10px;opacity:0.25;cursor:pointer;}
+	#djradio .nav .nav_box .arrowr:hover{opacity:0.4;}
+	#djradio .nav .nav_box .list_1 li{width:70px;height:70px;overflow:hidden;text-align: center;line-height:22px;margin-right: 33px;text-align:center;}
+	#djradio .nav .nav_box li a{color:#888;}
+	#djradio .nav .nav_box .icon_1{width:27px;height:32px;background:url(img/djradio_1.png) no-repeat -10px -8px;margin:0 auto;margin-top:10px;margin-bottom:6px;}
+	#djradio .nav .nav_box .icon_2{width:25px;height:34px;background:url(img/djradio_2.png) no-repeat -11px -7px;margin:0 auto;margin-top:9px;margin-bottom:5px;}
+	#djradio .nav .nav_box .icon_3{width:32px;height:32px;background:url(img/djradio_3.png) no-repeat -8px -8px;margin:0 auto;margin-top:10px;margin-bottom:6px;}
+	#djradio .nav .nav_box .icon_4{width:34px;height:30px;background:url(img/djradio_4.png) no-repeat -7px -9px;margin:0 auto;margin-top:11px;margin-bottom:7px;}
+	#djradio .nav .nav_box .icon_5{width:30px;height:30px;background:url(img/djradio_5.png) no-repeat -9px -9px;margin:0 auto;margin-top:11px;margin-bottom:7px;}
+	#djradio .nav .nav_box .icon_6{width:24px;height:31px;background:url(img/djradio_6.png) no-repeat -12px -9px;margin:0 auto;margin-top:11px;margin-bottom:6px;}
+	#djradio .nav .nav_box .icon_7{width:30px;height:33px;background:url(img/djradio_7.png) no-repeat -7px -9px;margin:0 auto;margin-top:11px;margin-bottom:4px;}
+	#djradio .nav .nav_box .icon_8{width:30px;height:30px;background:url(img/djradio_8.png) no-repeat -9px -9px;margin:0 auto;margin-top:11px;margin-bottom:7px;}
+	#djradio .nav .nav_box .icon_9{width:34px;height:27px;background:url(img/djradio_9.png) no-repeat -7px -10px;margin:0 auto;margin-top:12px;margin-bottom:9px;}
+	#djradio .nav .nav_box .list_2{margin-top:28px;margin-bottom:26px;}
+	#djradio .nav .nav_box .list_2 li{line-height:26px;width:70px;height:70px;overflow:hidden;margin-right:33px;text-align:center;}
+	#djradio .nav .nav_box .icon_11{width:38px;height:28px;background:url(img/djradio_10.png) no-repeat -5px -10px;margin:0 auto;margin-top:11px;margin-bottom:5px;}
+	#djradio .nav .nav_box .icon_22{width:30px;height:30px;background:url(img/djradio_11.png) no-repeat -9px -9px;margin:0 auto;margin-top:10px;margin-bottom:4px;}
+	#djradio .nav .nav_box .icon_33{width:32px;height:30px;background:url(img/djradio_12.png) no-repeat -8px -11px;margin:0 auto;margin-top:12px;margin-bottom:2px;}
+	#djradio .nav .nav_box .icon_44{width:26px;height:30px;background:url(img/djradio_13.png) no-repeat -11px -9px;margin:0 auto;margin-top:10px;margin-bottom:4px;}
+	#djradio .nav .nav_box .icon_55{width:34px;height:35px;background:url(img/djradio_14.png) no-repeat -7px -7px;margin:0 auto;margin-top:8px;margin-bottom:1px;}
+	#djradio .nav .nav_box .icon_66{width:32px;height:32px;background:url(img/djradio_15.png) no-repeat -8px -8px;margin:0 auto;margin-top:9px;margin-bottom:3px;}
+	#djradio .nav .nav_box .icon_77{width:24px;height:30px;background:url(img/djradio_16.png) no-repeat -12px -6px;margin:0 auto;margin-top:7px;margin-bottom:7px;}
+	#djradio .nav .nav_box .icon_88{width:30px;height:30px;background:url(img/djradio_17.png) no-repeat -9px -9px;margin:0 auto;margin-top:10px;margin-bottom:4px;}
+	#djradio .nav .nav_box .icon_99{width:37px;height:26px;background:url(img/djradio_18.png) no-repeat -5px -11px;margin:0 auto;margin-top:12px;margin-bottom:6px;}
+	#djradio .nav .nav_box .nav_dot_box{width:900px;height:20px;position:absolute;left:0;top:181px;text-indent:435px;}
+	#djradio .nav .nav_box .nav_dot_box li.active{background:url(img/radio_slide.png) no-repeat -37px -7px;width:20px;height:20px;display:inline-block;cursor:pointer;}
+	#djradio .nav .nav_box .nav_dot_box li:last-of-type{background:url(img/radio_slide.png) no-repeat -7px -7px;width:20px;height:20px;display:inline-block;cursor:pointer;}
+	#djradio .nav .nav_box li:hover{width:70px;height:70px;background:#f6f7f7;border-radius:3px;}
+/*======css program=======*/
+	#djradio .program{width:900px;height:662px;margin:0 auto;}
+	#djradio .program .recommend,.ranking_list{width:426px;border-bottom:solid 1px #e2e2e2;}
+	#djradio .program .recommend h2{font-size:24px;line-height: 46px;padding-top:14px;}
+	#djradio .program .recommend h2:hover{text-decoration:underline;}
+	#djradio .program .recommend p{line-height:12px;padding-top:37px;}
+	#djradio .program .recommend p:hover{text-decoration:underline;}
+	#djradio .program .recommend .recommend_list_box{width:424px;border-top:solid 2px #c20c0c;border-left:solid 1px #e2e2e2;border-right:solid 1px #e2e2e2;}
+	#djradio .program .recommend_list_box li{height:60px;line-height:20px;position:relative;}
+	#djradio .program .recommend_list_box li .play{width:20px;height:20px;background:url(img/sprite_1.png) no-repeat -1px -111px;position:absolute;left:30px;top:20px;display:none;}
+	#djradio .program .recommend_list_box li .play a{display:block;width:100%;height:100%;}
+	#djradio .program .recommend_list_box li dd a{color:#999999;}
+	#djradio .program .recommend_list_box li div a{color:#999999;}
+
+	#djradio .program .recommend_list_box li:nth-of-type(2n){background:#f7f7f7;}
+	#djradio .program .recommend_list_box li:nth-of-type(2n+1){background:white;}
+	#djradio .program .recommend_list_box li:hover{background:#eeeeee;}
+	#djradio .program .recommend_list_box li:hover .play{display:block;} 
+	#djradio .program .recommend_list_box li div a:hover{color:#333;}
+	#djradio .program .recommend_list_box li dl a:hover{text-decoration:underline;}
+	#djradio .program .recommend_list_box li img{position:absolute;left:20px;top:10px;}
+	#djradio .program .recommend_list_box li dl{position:absolute;left:70px;top:10px;}
+	#djradio .program .recommend_list_box li:nth-of-type(1) .button_1{line-height: 16px;height:16px;width:60px;border:solid 1px #999999;text-align: center;position:absolute;left:334px;top:21px;}
+	#djradio .program .recommend_list_box li:nth-of-type(2) .button_2{line-height: 16px;height:16px;width:63px;border:solid 1px #999999;text-align: center;position:absolute;left:334px;top:21px;}
+	#djradio .program .recommend_list_box li:nth-of-type(3) .button_3{line-height: 16px;height:16px;width:60px;border:solid 1px #999999;text-align: center;position:absolute;left:334px;top:21px;}
+	#djradio .program .recommend_list_box li:nth-of-type(4) .button_4{line-height: 16px;height:16px;width:63px;border:solid 1px #999999;text-align: center;position:absolute;left:334px;top:21px;}
+	#djradio .program .recommend_list_box li:nth-of-type(5) .button_5{line-height: 16px;height:16px;width:48px;border:solid 1px #999999;text-align: center;position:absolute;left:334px;top:21px;}
+	#djradio .program .recommend_list_box li:nth-of-type(6) .button_6{line-height: 16px;height:16px;width:60px;border:solid 1px #999999;text-align: center;position:absolute;left:334px;top:21px;}
+	#djradio .program .recommend_list_box li:nth-of-type(7) .button_7{line-height: 16px;height:16px;width:60px;border:solid 1px #999999;text-align: center;position:absolute;left:334px;top:21px;}
+	#djradio .program .recommend_list_box li:nth-of-type(8) .button_8{line-height: 16px;height:16px;width:60px;border:solid 1px #999999;text-align: center;position:absolute;left:334px;top:21px;}
+	#djradio .program .recommend_list_box li:nth-of-type(9) .button_9{line-height: 16px;height:16px;width:60px;border:solid 1px #999999;text-align: center;position:absolute;left:334px;top:21px;}
+	#djradio .program .recommend_list_box li:nth-of-type(10) .button_10{line-height: 16px;height:16px;width:60px;border:solid 1px #999999;text-align: center;position:absolute;left:334px;top:21px;}
+/*======css ranking_list=======*/
+	#djradio .program .ranking_list h2{font-size:24px;line-height: 46px;padding-top:14px;}
+	#djradio .program .ranking_list h2:hover{text-decoration:underline;}
+	#djradio .program .ranking_list p{line-height:12px;padding-top:37px;}
+	#djradio .program .ranking_list p:hover{text-decoration:underline;}
+	#djradio .program .ranking_list .ranking_list_box{width:424px;border-top:solid 2px #c20c0c;border-left:solid 1px #e2e2e2;border-right:solid 1px #e2e2e2;}
+	#djradio .program .ranking_list_box li{height:60px;line-height:20px;position:relative;}
+	#djradio .program .ranking_list_box li .play{width:20px;height:20px;background:url(img/sprite_1.png) no-repeat -1px -111px;position:absolute;left:57px;top:20px;display:none;}
+	#djradio .program .ranking_list_box li .play a{display:block;width:100%;height:100%;}
+	#djradio .program .ranking_list_box li dd a{color:#999999;}
+	#djradio .program .ranking_list_box li div a{color:#999999;}
+	#djradio .program .ranking_list_box li:nth-of-type(2n){background:#f7f7f7;}
+	#djradio .program .ranking_list_box li:nth-of-type(2n+1){background:white;}
+	#djradio .program .ranking_list_box li:hover{background:#eeeeee;}
+	#djradio .program .ranking_list_box li:hover .play{display:block;} 
+	#djradio .program .ranking_list_box li div a:hover{color:#333;}
+	#djradio .program .ranking_list_box li dl a:hover{text-decoration:underline;}
+	#djradio .program .ranking_list_box li img{position:absolute;left:47px;top:10px;}
+	#djradio .program .ranking_list_box li dl{position:absolute;left:97px;top:11px;}
+	#djradio .program .ranking_list_box li h3{font-family: "Arial";font-size: 14px;position:absolute;left:15px;top:14px;}
+	#djradio .program .ranking_list_box li h4{font-size:12px;font-family: "Arial";color:#ba2226;line-height: 12px;position:absolute;left:24px;top:33px;}
+	#djradio .program .ranking_list_box li .strip{width:100px;height:8px;position:absolute;right:19px;top:26px;background:url(img/sprite_3.png) no-repeat 0 -240px;overflow: hidden;border-radius:;}
+	#djradio .program .ranking_list_box li:nth-of-type(1):before{content:"";display:block;width:6px;height:6px;background:url(img/sprite_2.png) no-repeat -74px -304px;position:absolute;left:16px;top:36px;}
+	#djradio .program .ranking_list_box li:nth-of-type(1) .strip_1{width:120px;height:8px;position:absolute;right:4px;top:0px;background:url(img/sprite_3.png) no-repeat 0 -304px;}
+	#djradio .program .ranking_list_box li:nth-of-type(1) .strip_2{width:4px;height:8px;position:absolute;right:0px;top:0px;background:url(img/sprite_3.png) no-repeat -116px -318px;}
+	#djradio .program .ranking_list_box li:nth-of-type(2):before{content:"";display:block;width:16px;height:5px;background:url(img/sprite_2.png) no-repeat -67px -289px;position:absolute;left:15px;top:38px;}
+	#djradio .program .ranking_list_box li:nth-of-type(2) .strip_1{width:120px;height:8px;position:absolute;right:7px;top:0px;background:url(img/sprite_3.png) no-repeat 0 -304px;}
+	#djradio .program .ranking_list_box li:nth-of-type(2) .strip_2{width:4px;height:8px;position:absolute;right:3px;top:0px;background:url(img/sprite_3.png) no-repeat -116px -318px;}
+	#djradio .program .ranking_list_box li:nth-of-type(3):before{content:"";display:block;width:6px;height:6px;background:url(img/sprite_2.png) no-repeat -74px -304px;position:absolute;left:16px;top:36px;}
+	#djradio .program .ranking_list_box li:nth-of-type(3) .strip_1{width:120px;height:8px;position:absolute;right:14px;top:0px;background:url(img/sprite_3.png) no-repeat 0 -304px;}
+	#djradio .program .ranking_list_box li:nth-of-type(3) .strip_2{width:4px;height:8px;position:absolute;right:10px;top:0px;background:url(img/sprite_3.png) no-repeat -116px -318px;}
+	#djradio .program .ranking_list_box li:nth-of-type(4):before{content:"";display:block;width:6px;height:6px;background:url(img/sprite_2.png) no-repeat -74px -304px;position:absolute;left:16px;top:36px;}
+	#djradio .program .ranking_list_box li:nth-of-type(4) .strip_1{width:120px;height:8px;position:absolute;right:45px;top:0px;background:url(img/sprite_3.png) no-repeat 0 -304px;}
+	#djradio .program .ranking_list_box li:nth-of-type(4) .strip_2{width:4px;height:8px;position:absolute;right:41px;top:0px;background:url(img/sprite_3.png) no-repeat -116px -318px;}
+	#djradio .program .ranking_list_box li:nth-of-type(5):before{content:"";display:block;width:6px;height:6px;background:url(img/sprite_2.png) no-repeat -74px -304px;position:absolute;left:16px;top:36px;}
+	#djradio .program .ranking_list_box li:nth-of-type(5) .strip_1{width:120px;height:8px;position:absolute;right:47px;top:0px;background:url(img/sprite_3.png) no-repeat 0 -304px;}
+	#djradio .program .ranking_list_box li:nth-of-type(5) .strip_2{width:4px;height:8px;position:absolute;right:43px;top:0px;background:url(img/sprite_3.png) no-repeat -116px -318px;}
+	#djradio .program .ranking_list_box li:nth-of-type(6):before{content:"";display:block;width:6px;height:6px;background:url(img/sprite_2.png) no-repeat -74px -304px;position:absolute;left:16px;top:36px;}
+	#djradio .program .ranking_list_box li:nth-of-type(6) .strip_1{width:120px;height:8px;position:absolute;right:50px;top:0px;background:url(img/sprite_3.png) no-repeat 0 -304px;}
+	#djradio .program .ranking_list_box li:nth-of-type(6) .strip_2{width:4px;height:8px;position:absolute;right:46px;top:0px;background:url(img/sprite_3.png) no-repeat -116px -318px;}
+	#djradio .program .ranking_list_box li:nth-of-type(7):before{content:"";display:block;width:6px;height:6px;background:url(img/sprite_2.png) no-repeat -74px -304px;position:absolute;left:13px;top:36px;}
+	#djradio .program .ranking_list_box li:nth-of-type(7) .strip_1{width:120px;height:8px;position:absolute;right:56px;top:0px;background:url(img/sprite_3.png) no-repeat 0 -304px;}
+	#djradio .program .ranking_list_box li:nth-of-type(7) .strip_2{width:4px;height:8px;position:absolute;right:52px;top:0px;background:url(img/sprite_3.png) no-repeat -116px -318px;}
+	#djradio .program .ranking_list_box li:nth-of-type(8):before{content:"";display:block;width:6px;height:6px;background:url(img/sprite_2.png) no-repeat -74px -304px;position:absolute;left:16px;top:36px;}
+	#djradio .program .ranking_list_box li:nth-of-type(8) .strip_1{width:120px;height:8px;position:absolute;right:58px;top:0px;background:url(img/sprite_3.png) no-repeat 0 -304px;}
+	#djradio .program .ranking_list_box li:nth-of-type(8) .strip_2{width:4px;height:8px;position:absolute;right:54px;top:0px;background:url(img/sprite_3.png) no-repeat -116px -318px;}
+	#djradio .program .ranking_list_box li:nth-of-type(9):before{content:"";display:block;width:6px;height:6px;background:url(img/sprite_2.png) no-repeat -74px -304px;position:absolute;left:16px;top:36px;}
+	#djradio .program .ranking_list_box li:nth-of-type(9) .strip_1{width:120px;height:8px;position:absolute;right:61px;top:0px;background:url(img/sprite_3.png) no-repeat 0 -304px;}
+	#djradio .program .ranking_list_box li:nth-of-type(9) .strip_2{width:4px;height:8px;position:absolute;right:57px;top:0px;background:url(img/sprite_3.png) no-repeat -116px -318px;}
+	#djradio .program .ranking_list_box li:nth-of-type(10):before{content:"";display:block;width:6px;height:6px;background:url(img/sprite_2.png) no-repeat -74px -304px;position:absolute;left:13px;top:36px;}
+	#djradio .program .ranking_list_box li:nth-of-type(10) .strip_1{width:120px;height:8px;position:absolute;right:65px;top:0px;background:url(img/sprite_3.png) no-repeat 0 -304px;}
+	#djradio .program .ranking_list_box li:nth-of-type(10) .strip_2{width:4px;height:8px;position:absolute;right:61px;top:0px;background:url(img/sprite_3.png) no-repeat -116px -318px;}
+	#djradio .program .ranking_list_box li:nth-of-type(7) h4{position:absolute;left:21px;top:33px;}
+	#djradio .program .ranking_list_box li:nth-of-type(10) h4{position:absolute;left:21px;top:33px;}
+/*======css radio=======*/
+    #djradio .radio{margin:0 auto;width:900px;margin-top:30px;}
+    #djradio .radio h2{font-size:24px;font-family: "微软雅黑";line-height:46px;float:left;}
+    #djradio .radio h2 span:hover{text-decoration:underline;cursor:pointer;}
+    #djradio .radio p{display:block;float:right;line-height:12px;margin-top:22px;}
+    #djradio .radio p:hover{cursor:pointer;text-decoration:underline;}
+    #djradio .radio .music_radio .music_main{overflow:hidden;height:351px;width:900px;border-top:solid 2px #c20c0c;}
+    #djradio .radio dl{height:160px;width:435px;border-bottom:solid 1px #e7e7e7;}
+    #djradio .radio dt:hover{text-decoration:underline;cursor:pointer;}
+    #djradio .radio .music_radio .music_main dl{position:relative;}
+    #djradio .radio .music_radio dl img{position:absolute;left:0;top:20px;}
+    #djradio .radio .music_radio dt{font-size:18px;font-family: "微软雅黑";font-weight:bold;line-height:18px;height:18px;position:absolute;left:140px;top:39px;}
+    #djradio .radio .music_radio dd:last-of-type{color:#999999;line-height:12px;height:12px;position:absolute;left:140px;top:83px;}
+    #djradio .radio .music_radio dl:nth-of-type(1){margin-right:30px;}
+    #djradio .radio .music_radio dl:nth-of-type(3){margin-right:30px;border-bottom:none;}
+	#djradio .radio .music_radio dl:nth-of-type(4){border-bottom:none;}
+    #djradio .radio .book_radio .book_main{overflow:hidden;height:351px;width:900px;border-top:solid 2px #c20c0c;}
+	#djradio .radio .book_radio .book_main dl{position:relative;}
+    #djradio .radio .book_radio dl img{position:absolute;left:0;top:20px;}
+    #djradio .radio .book_radio dt{font-size:18px;font-family: "微软雅黑";font-weight:bold;line-height:18px;height:18px;position:absolute;left:140px;top:39px;}
+    #djradio .radio .book_radio dd:last-of-type{color:#999999;line-height:12px;height:12px;position:absolute;left:140px;top:83px;}
+    #djradio .radio .book_radio dl:nth-of-type(1){margin-right:30px;}
+    #djradio .radio .book_radio dl:nth-of-type(3){margin-right:30px;border-bottom:none;}
+	#djradio .radio .book_radio dl:nth-of-type(4){border-bottom:none;}
+	#djradio .radio .talk_radio .talk_main{overflow:hidden;height:351px;width:900px;border-top:solid 2px #c20c0c;}
+	#djradio .radio .talk_radio .talk_main dl{position:relative;}
+    #djradio .radio .talk_radio dl img{position:absolute;left:0;top:20px;}
+    #djradio .radio .talk_radio dt{font-size:18px;font-family: "微软雅黑";font-weight:bold;line-height:18px;height:18px;position:absolute;left:140px;top:39px;}
+    #djradio .radio .talk_radio dd:last-of-type{color:#999999;line-height:12px;height:12px;position:absolute;left:140px;top:83px;}
+    #djradio .radio .talk_radio dl:nth-of-type(1){margin-right:30px;}
+    #djradio .radio .talk_radio dl:nth-of-type(3){margin-right:30px;border-bottom:none;}
+	#djradio .radio .talk_radio dl:nth-of-type(4){border-bottom:none;}
+	#djradio .radio .emotion_radio .emotion_main{overflow:hidden;height:351px;width:900px;border-top:solid 2px #c20c0c;}
+	#djradio .radio .emotion_radio .emotion_main dl{position:relative;}
+    #djradio .radio .emotion_radio dl img{position:absolute;left:0;top:20px;}
+    #djradio .radio .emotion_radio dt{font-size:18px;font-family: "微软雅黑";font-weight:bold;line-height:18px;height:18px;position:absolute;left:140px;top:39px;}
+    #djradio .radio .emotion_radio dd:last-of-type{color:#999999;line-height:12px;height:12px;position:absolute;left:140px;top:83px;}
+    #djradio .radio .emotion_radio dl:nth-of-type(1){margin-right:30px;}
+    #djradio .radio .emotion_radio dl:nth-of-type(3){margin-right:30px;border-bottom:none;}
+	#djradio .radio .emotion_radio dl:nth-of-type(4){border-bottom:none;}
+	#djradio .radio .creat_radio .creat_main{overflow:hidden;height:351px;width:900px;border-top:solid 2px #c20c0c;}
+	#djradio .radio .creat_radio .creat_main dl{position:relative;}
+    #djradio .radio .creat_radio dl img{position:absolute;left:0;top:20px;}
+    #djradio .radio .creat_radio dt{font-size:18px;font-family: "微软雅黑";font-weight:bold;line-height:18px;height:18px;position:absolute;left:140px;top:39px;}
+    #djradio .radio .creat_radio dd:last-of-type{color:#999999;line-height:12px;height:12px;position:absolute;left:140px;top:83px;}
+    #djradio .radio .creat_radio dl:nth-of-type(1){margin-right:30px;}
+    #djradio .radio .creat_radio dl:nth-of-type(3){margin-right:30px;border-bottom:none;}
+	#djradio .radio .creat_radio dl:nth-of-type(4){border-bottom:none;}
+	#djradio .radio .history_radio .history_main{overflow:hidden;height:351px;width:900px;border-top:solid 2px #c20c0c;}
+	#djradio .radio .history_radio .history_main dl{position:relative;}
+    #djradio .radio .history_radio dl img{position:absolute;left:0;top:20px;}
+    #djradio .radio .history_radio dt{font-size:18px;font-family: "微软雅黑";font-weight:bold;line-height:18px;height:18px;position:absolute;left:140px;top:39px;}
+    #djradio .radio .history_radio dd:last-of-type{color:#999999;line-height:12px;height:12px;position:absolute;left:140px;top:83px;}
+    #djradio .radio .history_radio dl:nth-of-type(1){margin-right:30px;}
+    #djradio .radio .history_radio dl:nth-of-type(3){margin-right:30px;border-bottom:none;}
+	#djradio .radio .history_radio dl:nth-of-type(4){border-bottom:none;}
+/*======css foot=======*/
+ 	#hu_food{height: 147px;width: 100%;background: #f2f2f2;border-top: 1px solid #d3d3d3}   
+   	.hu_food1{width: 983px;height: 100%;margin:0 auto;overflow: hidden;} 
+    .hu_food1 .hu_food2 li{float: left; font-size: 12px;line-height:24px;margin-top: 15px; }
+    .hu_food2 span{padding-right: 12px;}
+    .hu_food2 li a{color: #999999}
+    .hu_food1 ul:last-of-type{color:#666666;}
+    .hu_food1 dl{float: left; width: 482px;margin-top: 1px;}
+    .hu_food1 dl li{font-size: 12px;line-height: 24px;}
+    .hu_food1 dd li{float: left;}
+    .hu_food1 dd .left{margin-right: 14px}
+    .hu_food1 dd  .left1{margin-right: 17px;}
+    .hu_food1 dt .xiahuaxian:hover{text-decoration: underline;}
+    .hu_food1 dd span:hover{text-decoration: underline;cursor:pointer;}
+    #hu_food3 {background: red; float: right;width: 417px;margin-top: 22px;}
+    #hu_food3 ul li{float: right;font-size:12px;line-height: 61px;}
+    #hu_food3 li a{position: relative;}
+    #hu_food3 .foot_li1 a:before{content: "";display: block;width: 44px;height: 61px;background: url(img01/cash.png) no-repeat 0px 0px;position: absolute;right:17px;top: 0px }
+    #hu_food3 .foot_li2 a:before{content: "";display: block;width: 44px;height: 60px;background: url(img01/foot_enter.png) no-repeat -68px 0px;position: absolute;right:99px;top: 0px }
+    #hu_food3 .foot_li3 a:before{content: "";display: block;width: 45px;height: 60px;background: url(img01/foot_enter.png) no-repeat -8px 0px;position: absolute;right:189px;top: 0px }
+    #hu_food3 .foot_li4 a:before{content: "";display: block;width: 44px;height: 60px;background: url(img01/foot_enter.png) no-repeat -8px -80px;position: absolute;right:279px;top: 0px }
+    #hu_food3 .foot_li5 a:before{content: "";display: block;width: 50px;height: 60px;background: url(img01/foot_enter.png) no-repeat -65px -80px;position: absolute;right:366px;top: 0px }
+	</style>
+</head>
+<body>
+	<div id="head">
+		<div class="head_1 ">
+			   <div class="head1_content clear">
+			     <h1  class="head1_logo l">
+			           <a href="index.html">
+			           网易云音乐
+			           </a>
+			      </h1>
+			         <ul  class="head1_liebiao1 l">
+				                <li class="li_2 frist"><a href="">我的音乐</a></li>
+				                <li class="li_1 "><a href="#">发现音乐</a></li>
+				                <li class="li_3"><a href="">朋友</a></li>
+				                <li class="li_4"><a href="">商城</a></li>
+				                <li class="li_5"><a href="yinyueren.html" target="_blank">音乐人</a></li>
+				                <li class="li_6"><a href="">下载客户端</a></li>			          
+			         </ul>
+			         <ul class="head1_biaodan l">
+                              <li class="img"><img src="img01/hot.jpg" height="13" width="26" alt="">  </li>      
+			         </ul>
+			         <ul class="head1_biaodan1 l">
+			         <li class="l">
+			         <label for=""><input type="text" placeholder="音乐/视频/电台/用户"><img src="img01/放大镜.jpg" height="14" width="13" alt=""></label>
+			         </li>
+			         </ul>
+			         <div class="img2 l">
+			         	 <a href=""><img src="img01/摄像.jpg" height="32" width="90" alt="">
+			         	 <p>视频投递</p></a>
+			         </div>
+			         <div class="denglu1 r">
+			        <div class="denglu2 r"><a href="#" >登录</a></div> 
+			         	<ul class="denglu3 clear">
+			         		<li class="denglu4 clear"><a href="">手机号登录</a></li>
+			         		<li class="denglu8 clear"><a href="">微信登录</a></li>
+			         		<li class="denglu5 clear"><a href="">QQ登录</a></li>
+			         		<li class="denglu6 clear"><a href="">新浪微博登录</a></li>
+			         		<li class="denglu7 clear"><a href="">网易邮箱账号登录</a></li>
+			         	</ul>
+			         </div>
+                  </div>
+		          </div>
+		     <div id="head_2">
+		     	<div class="head_3">
+		     		<ul class="clear">
+		     			<li><a href="index.html">推荐</a></li>
+		     			<li><a href="paihangbang.html">排行榜</a></li>
+		     			<li><a href="gedan.html">歌单</a></li>
+		     			<li class="active"><a href="zhubidiantai.html">主播电台</a></li>
+		     			<li><a href="geshou.html">歌手</a></li>
+		     			<li><a href="">新碟上架</a></li>
+		     		</ul>
+		     	</div>
+		     </div>
+		
+	</div>
+	<div id="djradio" class="container-fluid">
+		<div id="djradio_main" class="container">
+			<div class="nav">
+				<div class="nav_box">
+					<ul class="clear list_1">
+						<li class="l" >
+							<a href="#">
+								<div class="icon_1"></div>
+								<p>有声书</p>
+							</a>
+						</li>
+						<li class="l" >
+							<a href="#">
+								<div class="icon_2"></div>
+								<p>知识技能</p>
+							</a>
+						</li>
+						<li class="l" >
+							<a href="#">
+								<div class="icon_3"></div>
+								<p>商业财经</p>
+							</a>
+						</li>
+						<li class="l" >
+							<a href="#">
+								<div class="icon_4"></div>
+								<p>人文历史</p>
+							</a>
+						</li>
+						<li class="l" >
+							<a href="#">
+								<div class="icon_5"></div>
+								<p>外语世界</p>
+							</a>
+						</li>
+						<li class="l">
+							<a href="#">
+								<div class="icon_6"></div>
+								<p>亲子宝贝</p>
+							</a>
+						</li>
+						<li class="l">
+							<a href="#">
+								<div class="icon_7"></div>
+								<p>创作|翻唱</p>
+							</a>
+						</li>
+						<li class="l">
+							<a href="#">
+								<div class="icon_8"></div>
+								<p>音乐故事</p>
+							</a>
+						</li>
+						<li class="l" style="margin-right:6px;">
+							<a href="#">
+								<div class="icon_9"></div>
+								<p>3D|电子</p>
+							</a>
+						</li>
+					</ul>
+					<ul class="clear list_2">
+						<li class="l" >
+							<a href="#">
+								<div class="icon_11"></div>
+								<p>相声曲艺</p>
+							</a>
+						</li>
+						<li class="l">
+							<a href="#">
+								<div class="icon_22"></div>
+								<p>情感调频</p>
+							</a>
+						</li>
+						<li class="l" >
+							<a href="#">
+								<div class="icon_33"></div>
+								<p>美文读物</p>
+							</a>
+						</li>
+						<li class="l">
+							<a href="#">
+								<div class="icon_44"></div>
+								<p>脱口秀</p>
+							</a>
+						</li>
+						<li class="l" >
+							<a href="#">
+								<div class="icon_55"></div>
+								<p>广播剧</p>
+							</a>
+						</li>
+						<li class="l" >
+							<a href="#">
+								<div class="icon_66"></div>
+								<p>二次元</p>
+							</a>
+						</li>
+						<li class="l" >
+							<a href="#">
+								<div class="icon_77"></div>
+								<p>明星做主播</p>
+							</a>
+						</li>
+						<li class="l" >
+							<a href="#">
+								<div class="icon_88"></div>
+								<p>娱乐|影视</p>
+							</a>
+						</li>
+						<li class="l" style="margin-right:6px;">
+							<a href="#">
+								<div class="icon_99"></div>
+								<p>科技科学</p>
+							</a>
+						</li>
+					</ul>
+					<div class="nav_dot_box">
+						<ul>
+							<li class="active"></li>
+							<li></li>
+						</ul>
+					</div>
+					<div class="arrowl"></div>
+					<div class="arrowr"></div>
+				</div>
+			</div>
+			<div class="program clear">
+				<div class="recommend l">
+					<div class="clear">
+						<h2 class="l"><a href="">推荐节目</a></h2>
+						<p class="r"><a href="">更多&gt;</a></p>
+					</div>
+					<div class="recommend_list_box">
+						<ul>
+							<li>
+								<a href="#">
+									<img src="img/program_1.jpg" height="40" width="40" alt="">
+								</a>
+								<dl>
+									<dt><a href="#">沉入大海，早开的晚霞。</a></dt>
+									<dd><a href="#">徐曼电台 慢时间</a></dd>
+								</dl>
+								<div class="button_1">
+									<a href="#">音乐故事</a>
+								</div>
+								<div class="play">
+									<a href="#"></a>
+								</div>
+							</li>
+							<li>
+								<a href="#">
+									<img src="img/program_2.jpg" height="40" width="40" alt="">
+								</a>
+								<dl>
+									<dt><a href="#">陷阱</a></dt>
+									<dd><a href="#">梦里的小鬼鬼鬼</a></dd>
+								</dl>
+								<div class="button_2">
+									<a href="#">创作|翻唱</a>
+								</div>
+								<div class="play">
+									<a href="#"></a>
+								</div>
+							</li>
+							<li>
+								<a href="#">
+									<img src="img/program_3.jpg" height="40" width="40" alt="">
+								</a>
+								<dl>
+									<dt><a href="#">请转告局长，三大队任务完成了</a></dt>
+									<dd><a href="#">网易人间FM-剧场</a></dd>
+								</dl>
+								<div class="button_3">
+									<a href="#">美文读物</a>
+								</div>
+								<div class="play">
+									<a href="#"></a>
+								</div>
+							</li>
+							<li>
+								<a href="#">
+									<img src="img/program_4.jpg" height="40" width="40" alt="">
+								</a>
+								<dl>
+									<dt><a href="#">岁月神偷（cover：金玟岐）</a></dt>
+									<dd><a href="#">Listen to your heart..</a></dd>
+								</dl>
+								<div class="button_4">
+									<a href="#">创作|翻唱</a>
+								</div>
+								<div class="play">
+									<a href="#"></a>
+								</div>
+							</li>
+							<li>
+								<a href="#">
+									<img src="img/program_5.jpg" height="40" width="40" alt="">
+								</a>
+								<dl>
+									<dt><a href="#">音乐才女王筝巨冷分享 蚂蚁的故事</a></dt>
+									<dd><a href="#">DJ林非 非常有笑果</a></dd>
+								</dl>
+								<div class="button_5">
+									<a href="#">脱口秀</a>
+								</div>
+								<div class="play">
+									<a href="#"></a>
+								</div>
+							</li>
+							<li>
+								<a href="#">
+									<img src="img/program_6.jpg" height="40" width="40" alt="">
+								</a>
+								<dl>
+									<dt><a href="#">邓雨贤：躲在熟悉旋律背后的闽南歌谣之父。</a></dt>
+									<dd><a href="#">萌得耳松</a></dd>
+								</dl>
+								<div class="button_6">
+									<a href="#">音乐故事</a>
+								</div>
+								<div class="play">
+									<a href="#"></a>
+								</div>
+							</li>
+							<li>
+								<a href="#">
+									<img src="img/program_7.jpg" height="40" width="40" alt="">
+								</a>
+								<dl>
+									<dt><a href="#">原声 | “猫咪追着孩子” | E80808</a></dt>
+									<dd><a href="#">英语曰曰曰 | 原声·讲解·干货</a></dd>
+								</dl>
+								<div class="button_7">
+									<a href="#">外语世界</a>
+								</div>
+								<div class="play">
+									<a href="#"></a>
+								</div>
+							</li>
+							<li>
+								<a href="#">
+									<img src="img/program_8.jpg" height="40" width="40" alt="">
+								</a>
+								<dl>
+									<dt><a href="#">第183期：我们之间最好的关系，是彼此成就</a></dt>
+									<dd><a href="#">林俊杰1307电台</a></dd>
+								</dl>
+								<div class="button_8">
+									<a href="#">音乐故事</a>
+								</div>
+								<div class="play">
+									<a href="#"></a>
+								</div>
+							</li>
+							<li>
+								<a href="#">
+									<img src="img/program_9.jpg" height="40" width="40" alt="">
+								</a>
+								<dl>
+									<dt><a href="#">0810 夏令营讲解部分总结</a></dt>
+									<dd><a href="#">翻转电台FlipRadio</a></dd>
+								</dl>
+								<div class="button_9">
+									<a href="#">人文历史</a>
+								</div>
+								<div class="play">
+									<a href="#"></a>
+								</div>
+							</li>
+							<li>
+								<a href="#">
+									<img src="img/program_10.jpg" height="40" width="40" alt="">
+								</a>
+								<dl>
+									<dt><a href="#">左撇子真的更聪明吗？</a></dt>
+									<dd><a href="#">早健康</a></dd>
+								</dl>
+								<div class="button_10">
+									<a href="#">知识技能</a>
+								</div>
+								<div class="play">
+									<a href="#"></a>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="ranking_list r">
+					<div class="clear">
+						<h2 class="l"><a href="">节目排行榜</a></h2>
+						<p class="r"><a href="">更多&gt;</a></p>
+					</div>	
+					<div class="ranking_list_box">
+						<ul>
+							<li>
+								<a href="#">
+									<img src="img/list_1.jpg" height="40" width="40" alt="">
+								</a>
+								<dl>
+									<dt><a href="#">爱我中华</a></dt>
+									<dd><a href="#">FORMINUTE</a></dd>
+								</dl>
+								<div class="play">
+									<a href="#"></a>
+								</div>
+								<div class="hot_1"></div>
+								<div class="strip">
+									<div class="strip_1"></div>
+									<div class="strip_2"></div>
+								</div>
+								<h3 style="color:#e04545">01</h3>
+								<h4>8</h4>
+							</li>
+							<li>
+								<a href="#">
+									<img src="img/list_2.jpg" height="40" width="40" alt="">
+								</a>
+								<dl>
+									<dt><a href="#">陪你晚睡的人一定很爱你。</a></dt>
+									<dd><a href="#">程一电台</a></dd>
+								</dl>
+								<div class="play">
+									<a href="#"></a>
+								</div>
+								<div class="hot_1"></div>
+								<div class="strip">
+									<div class="strip_1"></div>
+									<div class="strip_2"></div>
+								</div>
+								<h3 style="color:#e04545">02</h3>		
+							</li>
+							<li>
+								<a href="#">
+									<img src="img/list_3.jpg" height="40" width="40" alt="">
+								</a>
+								<dl>
+									<dt><a href="#">希望最后你结婚是因为爱情。</a></dt>
+									<dd><a href="#">蕊希电台</a></dd>
+								</dl>
+								<div class="play">
+									<a href="#"></a>
+								</div>
+								<div class="hot_1"></div>
+								<div class="strip">
+									<div class="strip_1"></div>
+									<div class="strip_2"></div>
+								</div>
+								<h3 style="color:#e04545">03</h3>
+								<h4>1</h4>
+							</li>
+							<li>
+								<a href="#">
+									<img src="img/list_4.jpg" height="40" width="40" alt="">
+								</a>
+								<dl>
+									<dt><a href="#">猜不透（cover丁当）</a></dt>
+									<dd><a href="#">爱抽烟屁的彦祖</a></dd>
+								</dl>
+								<div class="play">
+									<a href="#"></a>
+								</div>
+								<div class="hot_1"></div>
+								<div class="strip">
+									<div class="strip_1"></div>
+									<div class="strip_2"></div>
+								</div>
+								<h3>04</h3>
+								<h4>4</h4>
+							</li>
+							<li>
+								<a href="#">
+									<img src="img/list_5.jpg" height="40" width="40" alt="">
+								</a>
+								<dl>
+									<dt><a href="#">空白格 (Cover 蔡健雅)</a></dt>
+									<dd><a href="#">ANDO翻唱</a></dd>
+								</dl>
+								<div class="play">
+									<a href="#"></a>
+								</div>
+								<div class="hot_1"></div>
+								<div class="strip">
+									<div class="strip_1"></div>
+									<div class="strip_2"></div>
+								</div>
+								<h3>05</h3>
+								<h4>6</h4>
+							</li>
+							<li>
+								<a href="#">
+									<img src="img/list_6.jpg" height="40" width="40" alt="">
+								</a>
+								<dl>
+									<dt><a href="#">再见你好</a></dt>
+									<dd><a href="#">二嘉的小肉手</a></dd>
+								</dl>
+								<div class="play">
+									<a href="#"></a>
+								</div>
+								<div class="hot_1"></div>
+								<div class="strip">
+									<div class="strip_1"></div>
+									<div class="strip_2"></div>
+								</div>
+								<h3>06</h3>
+								<h4>4</h4>
+							</li>
+							<li>
+								<a href="#">
+									<img src="img/list_7.jpg" height="40" width="40" alt="">
+								</a>
+								<dl>
+									<dt><a href="#">陷阱</a></dt>
+									<dd><a href="#">梦里的小鬼鬼鬼</a></dd>
+								</dl>
+								<div class="play">
+									<a href="#"></a>
+								</div>
+								<div class="hot_1"></div>
+								<div class="strip">
+									<div class="strip_1"></div>
+									<div class="strip_2"></div>
+								</div>
+								<h3>07</h3>
+								<h4>12</h4>
+							</li>
+							<li>
+								<a href="#">
+									<img src="img/list_8.jpg" height="40" width="40" alt="">
+								</a>
+								<dl>
+									<dt><a href="#">你把我灌醉 - 冯提莫</a></dt>
+									<dd><a href="#">冯提莫</a></dd>
+								</dl>
+								<div class="play">
+									<a href="#"></a>
+								</div>
+								<div class="hot_1"></div>
+								<div class="strip">
+									<div class="strip_1"></div>
+									<div class="strip_2"></div>
+								</div>
+								<h3>08</h3>
+								<h4>5</h4>
+							</li>
+							<li>
+								<a href="#">
+									<img src="img/list_9.jpg" height="40" width="40" alt="">
+								</a>
+								<dl>
+									<dt><a href="#">答案抖音版本</a></dt>
+									<dd><a href="#">你的方宇杰</a></dd>
+								</dl>
+								<div class="play">
+									<a href="#"></a>
+								</div>
+								<div class="hot_1"></div>
+								<div class="strip">
+									<div class="strip_1"></div>
+									<div class="strip_2"></div>
+								</div>
+								<h3>09</h3>
+								<h4>7</h4>
+							</li>
+							<li>
+								<a href="#">
+									<img src="img/list_10.jpg" height="40" width="40" alt="">
+								</a>
+								<dl>
+									<dt><a href="#">再见（男声）</a></dt>
+									<dd><a href="#">迷途知返我还在</a></dd>
+								</dl>
+								<div class="play">
+									<a href="#"></a>
+								</div>
+								<div class="hot_1"></div>
+								<div class="strip">
+									<div class="strip_1"></div>
+									<div class="strip_2"></div>
+								</div>
+								<h3>10</h3>
+								<h4>11</h4>
+							</li>
+						</ul>	
+					</div>
+				</div>
+			</div>
+			<div class="radio">
+				<div class="music_radio">
+					<h2><span>音乐故事</span> · 电台</h2>
+					<p>更多&gt;</p>
+					<div class="music_main clear">
+						<dl class="l">
+							<dt>汶霖FM</dt>
+							<dd>
+								<a href="#"><img src="img/music_radio_1.jpg" height="120" width="120" alt=""></a>
+							</dd>
+							<dd>偏爱民谣摇滚 支持独立音乐</dd>
+						</dl>
+						<dl class="l">
+							<dt>路过右耳</dt>
+							<dd>
+								<a href="#"><img src="img/music_radio_2.jpg" height="120" width="120" alt=""></a>
+							</dd>
+							<dd>声音过右耳，直抵心上</dd>
+						</dl>
+						<dl class="l">
+							<dt>【耳边风】马世芳</dt>
+							<dd>
+								<a href="#"><img src="img/music_radio_3.jpg" height="120" width="120" alt=""></a>
+							</dd>
+							<dd>台北才子娓娓道来 用音乐治愈你</dd>
+						</dl>
+						<dl class="l">
+							<dt>爱情故事陈列馆</dt>
+							<dd>
+								<a href="#"><img src="img/music_radio_4.jpg" height="120" width="120" alt=""></a>
+							</dd>
+							<dd>一首歌，一段关于爱情的故事</dd>
+						</dl>
+					</div>
+				</div>
+				<div class="book_radio ">
+				<div class="book_radio">
+					<h2><span>美文读物</span> · 电台</h2>
+					<p>更多&gt;</p>
+					<div class="book_main clear">
+						<dl class="l">
+							<dt>60's 这一分钟</dt>
+							<dd>
+								<a href="#"><img src="img/book_radio_1.jpg" height="120" width="120" alt=""></a>
+							</dd>
+							<dd>1分钟很长，长到可以记一辈子</dd>
+						</dl>
+						<dl class="l">
+							<dt>倒吊男的猫与诗</dt>
+							<dd>
+								<a href="#"><img src="img/book_radio_2.jpg" height="120" width="120" alt=""></a>
+							</dd>
+							<dd>好声音的柔软伴你听诗</dd>
+						</dl>
+						<dl class="l">
+							<dt>疼哥深夜电台</dt>
+							<dd>
+								<a href="#"><img src="img/book_radio_3.jpg" height="120" width="120" alt=""></a>
+							</dd>
+							<dd>读有趣的书，做有点儿酷的人</dd>
+						</dl>
+						<dl class="l">
+							<dt>边江de恋声馆</dt>
+							<dd>
+								<a href="#"><img src="img/book_radio_4.jpg" height="120" width="120" alt=""></a>
+							</dd>
+							<dd>配音演员边江静静地读给你听</dd>
+						</dl>
+					</div>
+				</div>
+				<div class="talk_radio">
+					<h2><span>脱口秀</span> · 电台</h2>
+					<p>更多&gt;</p>
+					<div class="talk_main clear">
+						<dl class="l">
+							<dt>三人行不行</dt>
+							<dd>
+								<a href="#"><img src="img/talk_radio_1.jpg" height="120" width="120" alt=""></a>
+							</dd>
+							<dd>老中青三代的啥都聊脱口秀</dd>
+						</dl>
+						<dl class="l">
+							<dt>三好乱弹-见鬼日</dt>
+							<dd>
+								<a href="#"><img src="img/talk_radio_2.jpg" height="120" width="120" alt=""></a>
+							</dd>
+							<dd>今日见鬼，提头来见</dd>
+						</dl>
+						<dl class="l">
+							<dt>闺蜜夜话Girlstalk</dt>
+							<dd>
+								<a href="#"><img src="img/talk_radio_3.jpg" height="120" width="120" alt=""></a>
+							</dd>
+							<dd>神秘美少女组织与你八卦小秘密</dd>
+						</dl>
+						<dl class="l">
+							<dt>塑料姐妹狗</dt>
+							<dd>
+								<a href="#"><img src="img/talk_radio_4.jpg" height="120" width="120" alt=""></a>
+							</dd>
+							<dd>大学生版康熙来了</dd>
+						</dl>
+					</div>
+				</div>
+				<div class="emotion_radio">
+					<h2><span>情感调频</span> · 电台</h2>
+					<p>更多&gt;</p>
+					<div class="emotion_main clear">
+						<dl class="l">
+							<dt>工作放松冥想</dt>
+							<dd>
+								<a href="#"><img src="img/emotion_radio_1.jpg" height="120" width="120" alt=""></a>
+							</dd>
+							<dd>缓解焦虑 高效午休 提升专注力</dd>
+						</dl>
+						<dl class="l">
+							<dt>七天改善睡眠冥想</dt>
+							<dd>
+								<a href="#"><img src="img/emotion_radio_2.jpg" height="120" width="120" alt=""></a>
+							</dd>
+							<dd>睡前冥想10分钟 给你全天幸福感</dd>
+						</dl>
+						<dl class="l">
+							<dt>失恋留声机</dt>
+							<dd>
+								<a href="#"><img src="img/emotion_radio_3.jpg" height="120" width="120" alt=""></a>
+							</dd>
+							<dd>收集世界每个角落的恋爱故事</dd>
+						</dl>
+						<dl class="l">
+							<dt>刘轩 | 幸福的最小行动</dt>
+							<dd>
+								<a href="#"><img src="img/emotion_radio_4.jpg" height="120" width="120" alt=""></a>
+							</dd>
+							<dd>哈佛大学心理学硕士的智慧分享</dd>
+						</dl>
+					</div>
+				</div>
+				<div class="creat_radio">
+					<h2><span>创作|翻唱</span> · 电台</h2>
+					<p>更多&gt;</p>
+					<div class="creat_main clear">
+						<dl class="l">
+							<dt>乂乂施</dt>
+							<dd>
+								<a href="#"><img src="img/creat_radio_1.jpg" height="120" width="120" alt=""></a>
+							</dd>
+							<dd>瞎谈瞎唱也好听</dd>
+						</dl>
+						<dl class="l">
+							<dt>尊贵会员乐队</dt>
+							<dd>
+								<a href="#"><img src="img/creat_radio_2.jpg" height="120" width="120" alt=""></a>
+							</dd>
+							<dd>酷也可以很温柔</dd>
+						</dl>
+						<dl class="l">
+							<dt>【里约逐梦2周年翻唱】《荒岛》</dt>
+							<dd>
+								<a href="#"><img src="img/creat_radio_3.jpg" height="120" width="120" alt=""></a>
+							</dd>
+							<dd>温柔的歌给你前行的力量</dd>
+						</dl>
+						<dl class="l">
+							<dt>荒波纹</dt>
+							<dd>
+								<a href="#"><img src="img/creat_radio_4.jpg" height="120" width="120" alt=""></a>
+							</dd>
+							<dd>荒波纹的民谣世界</dd>
+						</dl>
+					</div>
+				</div>
+				<div class="history_radio">
+					<h2><span>人文历史</span> · 电台</h2>
+					<p>更多&gt;</p>
+					<div class="history_main clear">
+						<dl class="l">
+							<dt>慕容引刀的西方美术史</dt>
+							<dd>
+								<a href="#"><img src="img/history_radio_1.jpg" height="120" width="120" alt=""></a>
+							</dd>
+							<dd>刀刀狗之父带你用故事听懂艺术</dd>
+						</dl>
+						<dl class="l">
+							<dt>梁冬·睡睡平安</dt>
+							<dd>
+								<a href="#"><img src="img/history_radio_2.jpg" height="120" width="120" alt=""></a>
+							</dd>
+							<dd>催眠减压 给你的梦做个按摩</dd>
+						</dl>
+						<dl class="l">
+							<dt>李涵说历史</dt>
+							<dd>
+								<a href="#"><img src="img/history_radio_3.jpg" height="120" width="120" alt=""></a>
+							</dd>
+							<dd>维挖掘历史事件背后的真相</dd>
+						</dl>
+						<dl class="l">
+							<dt>周国平的哲学私房课</dt>
+							<dd>
+								<a href="#"><img src="img/history_radio_4.jpg" height="120" width="120" alt=""></a>
+							</dd>
+							<dd>中国著名学者为你解惑</dd>
+						</dl>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="hu_food">
+		<div class="hu_food1 clear">
+			<dl>
+				<dt class="clear hu_food2">
+					<ul class="clear">
+						<li class="li"><a href=""><span class="xiahuaxian">关于网易</span><span>|</span></a></li>
+						
+						<li><a href=""><span class="xiahuaxian">客户服务</span><span>|</span></a></li>
+						
+						<li><a href=""><span class="xiahuaxian">服务条款</span><span>|</span></a></li>
+						
+						<li><a href=""><span class="xiahuaxian">网站导航</span><span>|</span></a></li>
+					
+						<li><a href=""><span class="xiahuaxian">意见反馈</span><span>|</span></a></li>
+					</ul>
+				</dt>
+				<dd>
+					<ul class="clear">
+						<li class="left">
+							网易公司版权所有&copy;1997-2018  
+						</li>
+						<li>
+							杭州乐读科技有限公司运营:<span>浙网文[2018]3506-263号</span>
+						</li>
+						<li class="left1">
+							违法和不良信息举报电话:0571-89853516
+						</li>
+						<li>
+							举报邮箱:<span>cloucmusicservice@163.com</span>
+						</li>
+					</ul>
+				</dd>
+			</dl>
+
+			<div id="hu_food3">
+			<ul>
+				<li class="foot_li1"><a href="#"></a></li>
+				<li class="foot_li2"><a href="#"></a></li>
+				<li class="foot_li3"><a href="#"></a></li>
+				<li class="foot_li4"><a href="#"></a></li>
+				<li class="foot_li5"><a href="#"></a></li>
+			</ul>
+		    </div>
+		</div>
+	</div>
+</body>
+</html>

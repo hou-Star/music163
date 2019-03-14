@@ -1,0 +1,1095 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>网易云音乐</title>
+  <link rel="icon" href="favicon.ico">
+	<style>
+    *{ margin:0; padding:0;}
+	ul,ol,li{ list-style: none;}
+	img{ display: block;}
+	a{ text-decoration: none; color: #b7b7b7;}
+	body,h1,h2,h3,h4{ font-size: 12px; font-weight: normal; }
+    .clear:after{ display: block; content:""; clear:both;}
+    .l{ float: left;}
+	.r{ float: right;}
+         #head{width:100%;}
+        .head_1{height: 69px;background:#242424;border-bottom: 1px #000 solid;}
+        .head_1 .head1_content{width: 1098px;height:69px; margin:0 auto;}
+        .head1_content .head1_logo{width:175px;height:69px;height: 100%; background: url(img01/网易云音乐.jpg) no-repeat 0px 22px;}
+        .head1_content .head1_logo a{width: 175px;height: 100%;float: left;padding-right: 24px;text-indent: -9999px;}
+          .head1_content .head1_liebiao1{}
+          .head1_liebiao1 li{float: left;position: relative;}
+          .head1_liebiao1 li .frist{position: relative;}
+          .head1_liebiao1 .li_1 { width: 94px;height: 69px;color: #b7b7b7;font-weight: bold;cursor:pointer;text-align: center;}
+          .head1_liebiao1 .li_2 { width: 93px;height: 69px;color: #b7b7b7;font-weight: bold;cursor:pointer;text-align: center;}
+          .head1_liebiao1 .li_3 { width: 67px;height: 69px;color: #b7b7b7;font-weight: bold;cursor:pointer;text-align: center;}
+           .head1_liebiao1 .li_4 { width: 65px;height: 69px;color: #b7b7b7;font-weight: bold;cursor:pointer;text-align: center;}
+           .head1_liebiao1 .li_5 { width: 81px;height: 69px;color: #b7b7b7;font-weight: bold;cursor:pointer;text-align: center;}
+           .head1_liebiao1 .li_6 { width: 105px;height: 69px;color: #b7b7b7;font-weight: bold;cursor:pointer;text-align: center;}
+           .head1_liebiao1 li a{height: 69px; line-height: 69px;}
+           .head1_liebiao1 li.frist:before{width: 12px;height: 16px;content: "";display: block; background: url(img01/精灵图.png) no-repeat -226px 0px;position: absolute;left: 41px;bottom:-11px;
+           }
+           .head1_liebiao1 li:hover{background-color:black;}
+           .head1_liebiao1 li a:hover{color: white;}
+           .head1_liebiao1 li.frist a{color: white;}
+           .head1_biaodan{position: relative;}
+                 .head1_biaodan .img{position: absolute;left:0px;top: 22px;}  
+                  .head1_biaodan1 {margin-left: 87px;margin-top: 19px;position: relative;}
+                  .head1_biaodan1 input{width: 154px;height: 31px;text-indent: 29px;border-radius: 20px}
+                  .head1_biaodan1 img{position: absolute;left:10px;bottom: 9px;}
+                   .img2{position: relative;}
+                   .img2 a{display: block;font-size: 10px;}
+                   .img2 img{position: absolute;left: 12px;top: 19px;}
+                   .img2 p{position: relative;left: 43px;top: 26px;}
+                   a :hover{color: white;}
+                   .denglu1{overflow: hidden;  width:52px; height:25px;margin-top: 27px;position: relative;}
+                   .denglu1 .denglu2{ font-size: 10px;line-height:14px;padding-right: 26px;position: relative;width:26px;}
+                   .denglu1 .denglu2:after{width: 12px;height: 7px; content: "";display: block;background: url(img01/精灵图.png) no-repeat -228px -60px;position: absolute; left:38px;top:3px;}
+
+                    .denglu1:hover{height: auto;overflow:visible}
+                   
+                   .denglu1 ul{line-height: 38px;background:#2b2b2b ;width: 158px;display: block;position: absolute;top: 30px;left: -67px}
+                   .denglu1 ul li{height:38px;font-size: 12px;border-bottom: 1px solid black;border-right: 1px solid black;border-left: 1px solid black;
+                   }
+
+                   .denglu1 ul li{position: relative;float: left;width: 156px}
+                   .denglu1 li a{float: left;position: relative;padding-left:44px;}
+                   .denglu1 .denglu4 a:before{width:10px;height: 14px; content: "";display: block;background: url(img01/toplist.png) no-repeat -3px -2px;position:absolute;left: 20px;top:12px;}
+                   .denglu1 .denglu8 a:before{width:18px;height: 15px; content: "";display: block;background: url(img01/toplist.png) no-repeat -20px -22px;position:absolute;left: 18px;top:13px;}
+                   .denglu1 .denglu7 a:before{width:12px;height: 15px; content: "";display: block;background: url(img01/toplist.png) no-repeat -2px -42px;position:absolute;left: 19px;top:12px;}
+                   .denglu1 .denglu5 a:before{width:14px;height: 16px; content: "";display: block;background: url(img01/toplist.png) no-repeat -20px -41px;position:absolute;left: 18px;top:12px;}
+                   .denglu1 .denglu6 a:before{width:16px;height: 13px; content: "";display: block;background: url(img01/toplist.png) no-repeat 0px -23px;position:absolute;left: 17px;top:13px;}
+                   .denglu1 ul li:hover{background: #353535}
+                   .denglu1 ul  a:hover{color:white;}
+
+                   #head_2{background: #c20c0c;width: 100%;height: 34px;}
+                   .head_3{width: 1098px;height:100%; margin: 0 auto;}
+                   .head_3 ul{margin-left: 197px;}
+                   .head_3 li{float: left;font-size: 12px;line-height: 20px;padding-left: 12px;padding-right: 13px;margin-right: 34px;margin-top: 7px}
+                   .head_3 ul a{color:#ffffff;}
+                    .head_3 ul .active{background: #9b0909}
+                    .head_3 .active a{color: white}
+                    .head_3 ul li:hover{background: #9b0909}
+
+
+
+
+	#yang_container{width:980px;border-left:1px #d3d3d3 solid;margin:100px auto;overflow: hidden;}
+/*	-------------left------------*/
+	.music_speciallist{width:240px;border-right:1px #d3d3d3 solid;background: #f9f9f9;float:left;}
+	.music_speciallist .speciallist_title{height:68px;overflow: hidden;}
+	.speciallist_title h2{font-size:14px;color:#000000;line-height:14px;text-indent:15px;margin-top: 41px;}
+    .music_speciallist .music_list{height:62px;}
+    .music_list h3{font-size: 12px;color:#000000;font-weight: normal;}
+    .music_list p{font-size:12px;color:#999999}
+     .music_list dt{padding:12px 0 0 20px;float:left;}
+      .music_list dd{padding-top:15px;margin-left:9px;float:left;}
+      .music_speciallist  a{display:block;width:240px;height:62px;color:#000000;font-size: 12px;}
+    /*    a:visited{background:#e6e6e6;}*/
+      .music_speciallist a:hover{background:#f4f2f2;}
+      .music_medietitle{padding: 21px 0 25px 15px;}
+      .music_medietitle h2{font-size: 14px;color:#000000;line-height: 14px;font-weight: normal;}
+      /*----------------------right------------*/
+     #yang_container .yang_mucontent{width:739px;background: #ffffff;padding:40px 0 0 39px;float: left;box-sizing:border-box;border-right: 1px #cccccc solid;}
+      .yang_mucontent_title{overflow: hidden;margin-bottom: 35px;}
+      .y_content_img{width:150px;height: 150px;border:1px #cccccc solid;padding:3px;float: left;}
+      .y_content_title{float: left;margin:20px 0 0 19px;}
+      .y_content_title h2{font-weight: normal;font-size: 18px;line-height: 18px;margin-bottom: 15px;}
+      .update_time{margin-bottom: 22px;}
+      .update_time p{color:#666666;font-size: 12px;line-height:12px;padding-left: 20px;position: relative;}
+      .update_time p:before{display: block;content: "";width: 13px;height: 13px;background:url(05img/雪碧图/icon.png) no-repeat -18px -682px;position: absolute;left: 0;top: 0;}
+      .update_time span{color:#999999;}
+      .btns_list{height:30px;}
+      .y_content_title .btns_list li{margin-right: 6px;text-align: center;line-height: 30px;}
+      .btns_list .btns_1{width:64px;height:30px;background:url(05img/雪碧图/button2.png) no-repeat 0 -387px;}
+      .btns_1 a{display:block;width:100%;height:100%;color:white;font-size: 12px;}
+      
+      .btns_list .btns_2{width:30px;height:30px;background:url(05img/雪碧图/button2.png) no-repeat 0 -1588px;}
+      .btns_list a{display:block;width:100%;height:100%;}
+     /* .btns_list .btns_3{width:89px;height:30px;position: relative;}*/
+     
+      /*.btns_list .btns_3:after{width:7px;height:30px;display:block;background:url(05img/雪碧图/button2.png) no-repeat -243px -935px;position:absolute;right:0;top:0; }*/
+      .btns_list .btns_3 {width:89px;height:30px;position: relative;z-index: 2;}
+      .btns_3:before{content:"";display:block;width:82px;height:30px;background:url(05img/雪碧图/button2.png) no-repeat 0 -977px;position: absolute;left: 0;top:0;z-index: -1;}
+      .btns_3:after{content:"";width:7px;height:30px;display:block;background:url(05img/雪碧图/button2.png) no-repeat -245px -1020px;position:absolute;right:0;top:0;z-index: -1; }
+      .btns_3 a,.btns_4 a,.btns_6 a{font-size:8px;color:black;text-indent: 20px;letter-spacing:-1px;}
+      .btns_list .btns_4{width:71px;height: 30px;position: relative;z-index: 2;}
+      .btns_4:before{content:"";display:block;width:64px;height:30px;background:url(05img/雪碧图/button2.png) no-repeat 0 -1225px;position: absolute;left: 0;top:0;z-index: -1;}
+      .btns_4:after{content:"";width:7px;height:30px;display:block;background:url(05img/雪碧图/button2.png) no-repeat -245px -1020px;position:absolute;right:0;top:0;z-index: -1; }
+      .btns_list .btns_5{width:59px;height: 30px;position: relative;z-index: 2;}
+      .btns_5:before{content:"";display:block;width:52px;height:30px;background:url(05img/雪碧图/button2.png) no-repeat 0 -2761px;position: absolute;left: 0;top:0;z-index: -1;}
+      .btns_5:after{content:"";width:7px;height:30px;display:block;background:url(05img/雪碧图/button2.png) no-repeat -245px -1020px;position:absolute;right:0;top:0;z-index: -1; }
+      .btns_5 a{font-size: 12px;color:black;text-indent: 23px;}
+         .btns_list .btns_6{width:83px;height: 30px;position: relative;z-index: 2;}
+       .btns_6:before{content:"";display:block;width:76px;height:30px;background:url(05img/雪碧图/button2.png) no-repeat 0 -2761px;position: absolute;left: 0;top:0;z-index: -1;}
+      .btns_6:after{content:"";width:7px;height:30px;display:block;background:url(05img/雪碧图/button2.png) no-repeat -245px -1020px;position:absolute;right:0;top:0;z-index: -1; }
+
+      .yang_mucontent .y_musiccontent_title{width:670px;border-bottom: 2px #c20c0c solid;padding-bottom: 8px;}
+      .y_musiccontent_title h2{font-size: 20px;font-weight: normal;float: left;width:80px;margin-right: 20px;}
+      .y_musiccontent_title  p{width:46px;color:#666666;font-size: 12px;float: left;margin-top: 7px;}
+      .y_musiccontent_title .play_times{width:115px;float: right;}
+      .y_musiccontent_title .play_times p{width:115px;font-size: 12px;color:#666666;}
+      .play_times p span{font-size: 8px;color:#c20c0c;font-weight: bold;}
+       .yang_mucontent table{border-collapse: collapse;width:670px;}
+       .yang_mucontent thead{border:1px #d9d9d9 solid;}
+      .yang_mucontent thead tr{height:34px;background: url(05img/headtr_bg.jpg) repeat-x;line-height: 34px;color:#666666;font-size: 12px;text-indent: 7px;}
+       .yang_mucontent thead tr td:nth-of-type(1){width:78px;border-right: 1px #d9d9d9 solid;}
+       .yang_mucontent thead tr td:nth-of-type(2){width:406px;border-right: 1px #d9d9d9 solid;}
+       .yang_mucontent thead tr td:nth-of-type(3){width:90px;border-right: 1px #d9d9d9 solid;}
+        .yang_mucontent thead tr td:nth-of-type(4){width:91px;border-right: 1px #d9d9d9 solid;}
+        .yang_mucontent tbody{border:1px #d9d9d9 solid;}
+        .yang_mucontent tbody tr:nth-of-type(2n+1){height:30px;background: #f7f7f7;}
+        .yang_mucontent tbody tr:nth-of-type(2n){height:30px;background:#ffffff;}
+        .yang_mucontent tbody tr:nth-of-type(2n){height:30px;background:#ffffff;}
+       .yang_mucontent tbody tr:nth-of-type(1){height:73px;line-height: 73px;}
+        .yang_mucontent tbody tr:nth-of-type(2){height:70px;line-height: 70px;}
+        .yang_mucontent tbody tr:nth-of-type(3){height:68px;line-height: 68px;}
+     /*   tbody tr td:nth-of-type{1}{text-indent:20px;color:#666666;}*/
+        .yang_music_number{text-indent:16px;color:#666666;font-size: 10px;}
+        .yang_music_time{text-indent:8px;color:#666666;}
+        .music_number_new{position: relative;}
+        .music_number_new:before{display:block;content:"";width: 16px;height: 5px;background: url(05img/雪碧图/icon.png) no-repeat -67px -289px;position: absolute;left: 48px;top:35px;}
+        .yang_music_img{margin:13px 14px 0 8px;}
+        .music_number_rise{position: relative;}
+        .music_number_rise:before{display:block;content:"";width: 6px;height: 6px;background: url(05img/雪碧图/icon.png) no-repeat -74px -304px;position: absolute;left: 45px;top:32px;}
+        .music_number_rise span{color:#bb2128;font-size: 10px;display: block;width:12px;height:9px;position: absolute;left:35px;top:0;}
+        .yang_music_name{line-height:17px;margin-top: 30px;position: relative;padding-left: 25px;}
+     	.yang_music_name:before{display:block;content:"";width: 17px;height: 17px;background: url(05img/雪碧图/icon.png) no-repeat -45px -635px;position: absolute;left:0;top:2px;}
+     	.yang_music_name a{font-size: 12px;color:black;}
+     	table a:hover{text-decoration: underline;}
+     	.yang_singer_name{margin-left: 8px;}
+     	.yang_singer_name a{font-size: 12px;color:black;}
+     	.music_number_new_other{position: relative;}
+     	.music_number_new_other:before{display:block;content:"";width: 16px;height: 5px;background: url(05img/雪碧图/icon.png) no-repeat -67px -289px;position: absolute;left: 48px;top:12px;}
+     	.yang_music_name_other{line-height:17px;margin:4px 0 0 9px;position: relative;padding-left: 25px;}
+     	.yang_music_name_other:before{display:block;content:"";width: 17px;height: 17px;background: url(05img/雪碧图/icon.png) no-repeat -45px -635px;position: absolute;left:0;top:2px;}
+     	.yang_music_name_other a{font-size: 12px;color:black;}
+
+                      #hu_food{height: 147px;width: 100%;background: #f2f2f2;border-top: 1px solid #d3d3d3}   
+       .hu_food1{width: 983px;height: 100%;margin:0 auto;overflow: hidden;} 
+       .hu_food1 .hu_food2 li{float: left; font-size: 12px;line-height:24px;margin-top: 15px; }
+       .hu_food2 span{padding-right: 12px;}
+       .hu_food2 li a{color: #d0d0d0}
+       .hu_food1 dl{float: left; width: 482px;margin-top: 1px;}
+       .hu_food1 dl li{font-size: 12px;line-height: 24px;}
+       .hu_food1 dd li{float: left;}
+       .hu_food1 dd .left{margin-right: 14px}
+       .hu_food1 dd  .left1{margin-right: 17px;}
+       .hu_food1 dt .xiahuaxian:hover{text-decoration: underline;}
+       .hu_food1 dd span:hover{text-decoration: underline;cursor:pointer;}
+        #hu_food3 {background: red; float: right;width: 417px;margin-top: 22px;}
+       
+        #hu_food3 ul li{float: right;font-size:12px;line-height: 61px;}
+        #hu_food3 li a{position: relative;}
+        #hu_food3 .foot_li1 a:before{content: "";display: block;width: 44px;height: 61px;background: url(img01/cash.png) no-repeat 0px 0px;position: absolute;right:17px;top: 0px }
+        #hu_food3 .foot_li2 a:before{content: "";display: block;width: 44px;height: 60px;background: url(img01/foot_enter.png) no-repeat -68px 0px;position: absolute;right:99px;top: 0px }
+        #hu_food3 .foot_li3 a:before{content: "";display: block;width: 45px;height: 60px;background: url(img01/foot_enter.png) no-repeat -8px 0px;position: absolute;right:189px;top: 0px }
+        #hu_food3 .foot_li4 a:before{content: "";display: block;width: 44px;height: 60px;background: url(img01/foot_enter.png) no-repeat -8px -80px;position: absolute;right:279px;top: 0px }
+        #hu_food3 .foot_li5 a:before{content: "";display: block;width: 50px;height: 60px;background: url(img01/foot_enter.png) no-repeat -65px -80px;position: absolute;right:366px;top: 0px }
+                    
+</style>
+</head>
+<body>
+	<div id="head">
+		<div class="head_1 ">
+			   <div class="head1_content clear">
+			     <h1  class="head1_logo l">
+			           <a href="index.html">
+			           网易云音乐
+			           </a>
+			      </h1>
+				
+			   
+		
+			         <ul  class="head1_liebiao1 l">
+				                <li class="li_2 frist"><a href="">我的音乐</a></li>
+				                <li class="li_1 "><a href="#">发现音乐</a></li>
+				                <li class="li_3"><a href="">朋友</a></li>
+				                <li class="li_4"><a href="">商城</a></li>
+				                <li class="li_5"><a href="yinyueren.html">音乐人</a></li>
+				                <li class="li_6"><a href="">下载客户端</a></li>
+				                
+			         </ul>
+			         <ul class="head1_biaodan l">
+                              <li class="img"><img src="img01/hot.jpg" height="13" width="26" alt="">  </li>
+			         	      
+			         </ul>
+			         <ul class="head1_biaodan1 l">
+			         <li class="l">
+			         <label for=""><input type="text" placeholder="音乐/视频/电台/用户"><img src="img01/放大镜.jpg" height="14" width="13" alt=""></label>
+			         </li>
+			         </ul>
+			         <div class="img2 l">
+			         	 <a href=""><img src="img01/摄像.jpg" height="32" width="90" alt="">
+			         	 <p>视频投递</p></a>
+			         </div>
+			         <div class="denglu1 r">
+			        <div class="denglu2 r"><a href="#" >登录</a></div> 
+			         	<ul class="denglu3 clear">
+			         		<li class="denglu4 clear"><a href="">手机号登录</a></li>
+			         		<li class="denglu8 clear"><a href="">微信登录</a></li>
+			         		<li class="denglu5 clear"><a href="">QQ登录</a></li>
+			         		<li class="denglu6 clear"><a href="">新浪微博登录</a></li>
+			         		<li class="denglu7 clear"><a href="">网易邮箱账号登录</a></li>
+			       
+			         	</ul>
+			         	
+			         </div>
+                  </div>
+               
+		          </div>
+		     <div id="head_2">
+		     	<div class="head_3">
+		     		<ul class="clear">
+		     			<li ><a href="index.html">推荐</a></li>
+		     			<li class="active"><a href="paihangbang.html">排行榜</a></li>
+		     			<li><a href="gedan.html">歌单</a></li>
+		     			<li><a href="zhubidiantai.html">主播电台</a></li>
+		     			<li><a href="geshou.html">歌手</a></li>
+		     			<li><a href="">新碟上架</a></li>
+		     		</ul>
+		     	</div>
+		     </div>
+		
+	</div>
+	<div id="yang_container">
+ 			<div class="music_speciallist">
+				<div class="speciallist_title">
+ 					<h2>云音乐特色榜</h2>
+ 				</div>
+
+                <a href="#" class="music_list clear">
+	 				<dl >
+	 					<dt><img src="05img/toplist_1.jpg" height="40" width="40"></dt>
+	 					<dd >
+	 						<h3>云音乐飙升榜</h3>
+	 						<p>每天更新</p>
+	 					</dd>
+	 				</dl>
+ 				</a>
+ 				 <a href="#" class="music_list clear">
+	 				<dl >
+	 					<dt><img src="05img/new_song_1.jpg" height="40" width="40"></dt>
+	 					<dd >
+	 						<h3>云音乐新歌榜</h3>
+	 						<p>每天更新</p>
+	 					</dd>
+	 				</dl>
+ 				</a>
+ 			 <a href="#" class="music_list clear">
+	 				<dl >
+	 					<dt><img src="05img/self_creat.jpg" height="40" width="40"></dt>
+	 					<dd >
+	 						<h3>网易原创歌曲榜</h3>
+	 						<p>每周四更新</p>
+	 					</dd>
+	 				</dl>
+ 				</a>
+ 			 <a href="#" class="music_list clear">
+	 				<dl >
+	 					<dt><img src="05img/song_1.jpg" height="40" width="40"></dt>
+	 					<dd >
+	 						<h3>云音乐热歌榜</h3>
+	 						<p>每周四更新</p>
+	 					</dd>
+	 				</dl>
+ 				</a>
+ 			<div class="music_medietitle">
+ 		       <h2>全球媒体榜</h2>	
+ 		   </div>
+ 		    <a href="#" class="music_list clear">
+	 				<dl >
+	 					<dt><img src="05img/say_song.jpg" height="40" width="40"></dt>
+	 					<dd >
+	 						<h3>说唱TOP榜</h3>
+	 						<p>每周五更新</p>
+	 					</dd>
+	 				</dl>
+ 				</a>
+ 				 <a href="#" class="music_list clear">
+	 				<dl >
+	 					<dt><img src="05img/ele_music.jpg" height="40" width="40"></dt>
+	 					<dd >
+	 						<h3>云音乐电音榜</h3>
+	 						<p>每周五更新</p>
+	 					</dd>
+	 				</dl>
+ 				</a>
+ 				 <a href="#" class="music_list clear">
+	 				<dl >
+	 					<dt><img src="05img/frestyle_song.jpg" height="40" width="40"></dt>
+	 					<dd >
+	 						<h3>云音乐嘻哈榜</h3>
+	 						<p>每周五更新</p>
+	 					</dd>
+	 				</dl>
+ 				</a>
+ 				 <a href="#" class="music_list clear">
+	 				<dl >
+	 					<dt><img src="05img/dou_music.jpg" height="40" width="40"></dt>
+	 					<dd >
+	 						<h3>抖音榜</h3>
+	 						<p>每周三更新</p>
+	 					</dd>
+	 				</dl>
+ 				</a>
+ 				 <a href="#" class="music_list clear">
+	 				<dl >
+	 					<dt><img src="05img/UK_list.jpg" height="40" width="40"></dt>
+	 					<dd >
+	 						<h3>英国Q杂志中文版周榜</h3>
+	 						<p>每周三更新</p>
+	 					</dd>
+	 				</dl>
+ 				</a>
+ 				 <a href="#" class="music_list clear">
+	 				<dl >
+	 					<dt><img src="05img/ele_compete.jpg" height="40" width="40"></dt>
+	 					<dd >
+	 						<h3>电竞音乐榜</h3>
+	 						<p>每周五更新</p>
+	 					</dd>
+	 				</dl>
+ 				</a>
+ 				 <a href="#" class="music_list clear">
+	 				<dl >
+	 					<dt><img src="05img/nation_elec.jpg" height="40" width="40"></dt>
+	 					<dd >
+	 						<h3>云音乐国电榜</h3>
+	 						<p>每周五更新</p>
+	 					</dd>
+	 				</dl>
+ 				</a>
+ 				 <a href="#" class="music_list clear">
+	 				<dl >
+	 					<dt><img src="05img/acg_list.jpg" height="40" width="40"></dt>
+	 					<dd >
+	 						<h3>云音乐ACG音乐榜</h3>
+	 						<p>每周四更新</p>
+	 					</dd>
+	 				</dl>
+ 				</a>
+ 				 <a href="#" class="music_list clear">
+	 				<dl >
+	 					<dt><img src="05img/old_song.jpg" height="40" width="40"></dt>
+	 					<dd >
+	 						<h3>云音乐古典音乐榜</h3>
+	 						<p>每周四更新</p>
+	 					</dd>
+	 				</dl>
+ 				</a>
+ 				 <a href="#" class="music_list clear">
+	 				<dl >
+	 					<dt><img src="05img/UK.jpg" height="40" width="40"></dt>
+	 					<dd >
+	 						<h3>UK排行周榜</h3>
+	 						<p>每周一更新</p>
+	 					</dd>
+	 				</dl>
+ 				</a>
+ 				 <a href="#" class="music_list clear">
+	 				<dl >
+	 					<dt><img src="05img/US_Blist.jpg" height="40" width="40"></dt>
+	 					<dd >
+	 						<h3>美国Billboard周榜</h3>
+	 						<p>每周三更新</p>
+	 					</dd>
+	 				</dl>
+ 				</a>
+ 				 <a href="#" class="music_list clear">
+	 				<dl >
+	 					<dt><img src="05img/Beat_song.jpg" height="40" width="40"></dt>
+	 					<dd >
+	 						<h3>Beatport全球电子舞曲榜</h3>
+	 						<p>每周四更新</p>
+	 					</dd>
+	 				</dl>
+ 				</a>
+ 				 <a href="#" class="music_list clear">
+	 				<dl >
+	 					<dt><img src="05img/UK_list.jpg" height="40" width="40"></dt>
+	 					<dd >
+	 						<h3>法国NRJVos Hits周榜</h3>
+	 						<p>每周五更新</p>
+	 					</dd>
+	 				</dl>
+ 				</a>
+ 				 <a href="#" class="music_list clear">
+	 				<dl >
+	 					<dt><img src="05img/ktv_song.jpg" height="40" width="40"></dt>
+	 					<dd >
+	 						<h3>KTV唛榜</h3>
+	 						<p>每周五更新</p>
+	 					</dd>
+	 				</dl>
+ 				</a>
+ 				 <a href="#" class="music_list clear">
+	 				<dl >
+	 					<dt><img src="05img/iTunes.jpg" height="40" width="40"></dt>
+	 					<dd >
+	 						<h3>iTunes榜</h3>
+	 						<p>每周一更新</p>
+	 					</dd>
+	 				</dl>
+ 				</a>
+ 				 <a href="#" class="music_list clear">
+	 				<dl >
+	 					<dt><img src="05img/Japan_ist.jpg" height="40" width="40"></dt>
+	 					<dd >
+	 						<h3>日本Oricon周榜</h3>
+	 						<p>每周三更新</p>
+	 					</dd>
+	 				</dl>
+ 				</a>
+ 				 <a href="#" class="music_list clear">
+	 				<dl >
+	 					<dt><img src="05img/hit_form.jpg" height="40" width="40"></dt>
+	 					<dd >
+	 						<h3>Hit FM Top榜</h3>
+	 						<p>每周一更新</p>
+	 					</dd>
+	 				</dl>
+ 				</a>
+ 				 <a href="#" class="music_list clear">
+	 				<dl >
+	 					<dt><img src="05img/taiwan_haitao.jpg" height="40" width="40"></dt>
+	 					<dd >
+	 						<h3>台湾Hito排行榜</h3>
+	 						<p>每周一更新</p>
+	 					</dd>
+	 				</dl>
+ 				</a>
+ 				 <a href="#" class="music_list clear">
+	 				<dl >
+	 					<dt><img src="05img/gang_tai.jpg" height="40" width="40"></dt>
+	 					<dd >
+	 						<h3>中国TOP排行榜(港台榜)</h3>
+	 						<p>每周一更新</p>
+	 					</dd>
+	 				</dl>
+ 				</a>
+ 				 <a href="#" class="music_list clear">
+	 				<dl >
+	 					<dt><img src="05img/inland_list.jpg" height="40" width="40"></dt>
+	 					<dd >
+	 						<h3>中国TOP排行榜(内地榜）</h3>
+	 						<p>每周一更新</p>
+	 					</dd>
+	 				</dl>
+ 				</a>
+ 				 <a href="#" class="music_list clear">
+	 				<dl >
+	 					<dt><img src="05img/tiger_list.jpg" height="40" width="40"></dt>
+	 					<dd >
+	 						<h3>香港电台中文歌曲龙虎榜</h3>
+	 						<p>每周五更新</p>
+	 					</dd>
+	 				</dl>
+ 				</a>
+ 				 <a href="#" class="music_list clear">
+	 				<dl >
+	 					<dt><img src="05img/xiha_list.jpg" height="40" width="40"></dt>
+	 					<dd >
+	 						<h3>中国嘻哈榜</h3>
+	 						<p>每周五更新</p>
+	 					</dd>
+	 				</dl>
+ 				</a>
+ 			</div>
+
+ 			<div class="yang_mucontent">
+				<div class="yang_mucontent_title">
+ 					<div class="y_content_img">
+ 						<img src="05img/top_rise_2.jpg" height="150" width="150" alt="">
+ 					</div>
+ 					<div class="y_content_title">
+ 						<h2>云音乐飙升榜</h2>
+ 						<div class="update_time">
+ 							<p>最近更新：8月14日<span>（每天更新）</span></p>
+ 					    </div>
+ 					    <ul class="btns_list">
+ 					    	<li class="l">
+ 					    		<div class="btns_1 l">
+ 					    			<a href="#">播放</a>
+ 					    		</div>
+ 					    	
+ 					    		<div class="btns_2 l">
+ 					    			<a href="#"></a>
+ 					    		</div>
+ 					    	</li>
+ 					    	<li class="l">
+ 					    		<div class="btns_3">
+ 					    		    
+ 					    			<a href="#">(1155055)</a>
+ 					    		</div>
+ 					    	</li>
+ 					    	<li class="l">
+ 					    	    <div class="btns_4">
+ 					    			<a href="#">(3902)</a>
+ 					    		
+ 					    		</div>
+ 					    	</li>
+ 					    	<li class="l">
+ 					    	    <div class="btns_5">
+ 					    			<a href="#">下载</a>
+ 					    		
+ 					    		</div>
+ 					    	</li>
+ 					    	<li class="l">
+ 					    	    <div class="btns_6">
+ 					    			<a href="#">(131723)</a>
+ 					    		
+ 					    		</div>
+ 					    	</li>
+ 					    </ul>
+ 					</div>
+ 				</div>
+ 				<div class="y_musiccontent_title clear">
+ 					<h2>歌曲列表</h2>
+ 					<p>100首歌</p>
+ 					<div class="play_times">
+ 						<p>播放:<span>1230999901</span>次</p>	
+ 					</div>
+ 				</div>
+ 				<table>
+ 					<thead>
+ 					  <tr>
+ 					  		<td></td>
+ 					  		<td>标题</td>
+ 					  		<td>时间</td>
+ 					  		<td>歌手</td>
+ 					  </tr>						
+ 					</thead>
+ 					<tbody>
+ 						<tr>
+ 							<td class="yang_music_number music_number_new">1</td>
+ 							<td>
+ 								<div class="yang_music_img l">
+ 									<a href="#"><img src="05img/daojiangxing.jpg" height="50" width="50" alt=""></a>
+ 								</div>
+ 								<div class="yang_music_name l">
+ 									<a href="#">盗将行</a>
+ 								</div>
+ 							</td>
+ 							<td class="yang_music_time">03:18</td>
+ 							<td>
+ 								<span class="yang_singer_name"><a href="#">花粥</a>/<a href="#">马雨阳</a></span>
+ 							</td>
+ 						</tr>
+ 						<tr>
+ 							<td class="yang_music_number music_number_new">2</td>
+ 							<td>
+ 								<div class="yang_music_img l">
+ 									<a href="#"><img src="05img/hold me down.jpg" height="50" width="50" alt=""></a>
+ 								</div>
+ 								<div class="yang_music_name l">
+ 									<a href="#">Hlod Me Down</a>
+ 								</div>
+ 							</td>
+ 							<td class="yang_music_time">03:05</td>
+ 							<td>
+ 								<span class="yang_singer_name"><a href="#">吴亦凡</a></span>
+ 							</td>
+ 						</tr>
+ 						<tr>
+ 							<td class="yang_music_number music_number_rise">3<span>10</span>
+ 							</td>
+ 							<td>
+ 								<div class="yang_music_img l">
+ 									<a href="#"><img src="05img/xijing.jpg" height="50" width="50" alt=""></a>
+ 								</div>
+ 									<div class="yang_music_name l">
+ 									<a href="#">戏精</a>
+ 								</div>
+
+ 							</td>
+ 							<td class="yang_music_time">03:12</td>
+ 							<td>
+ 								<span class="yang_singer_name"><a href="#">徐秉龙</a></span>
+ 							</td>
+ 						</tr>
+
+ 						<tr>
+ 							<td class="yang_music_number music_number_new_other">4</td>
+ 							<td>
+ 									<div class="yang_music_name_other">
+ 									<a href="#">倒数</a>
+ 							</td>
+ 							<td class="yang_music_time">03:49</td>
+ 							<td>
+ 								<span class="yang_singer_name"><a href="#">G.M.E邓紫棋</a></span>
+ 							</td>
+ 						</tr>
+ 						<tr>
+ 							<td class="yang_music_number music_number_new_other">5</td>
+ 							<td>
+ 									<div class="yang_music_name_other">
+ 									<a href="#">倒数</a>
+ 							</td>
+ 							<td class="yang_music_time">03:49</td>
+ 							<td>
+ 								<span class="yang_singer_name"><a href="#">G.M.E邓紫棋</a></span>
+ 							</td>
+ 						</tr>
+ 						<tr>
+ 							<td class="yang_music_number music_number_new_other">6</td>
+ 							<td>
+ 									<div class="yang_music_name_other">
+ 									<a href="#">倒数</a>
+ 							</td>
+ 							<td class="yang_music_time">03:49</td>
+ 							<td>
+ 								<span class="yang_singer_name"><a href="#">G.M.E邓紫棋</a></span>
+ 							</td>
+ 						</tr>
+ 						<tr>
+ 							<td class="yang_music_number music_number_new_other">7</td>
+ 							<td>
+ 									<div class="yang_music_name_other">
+ 									<a href="#">倒数</a>
+ 							</td>
+ 							<td class="yang_music_time">03:49</td>
+ 							<td>
+ 								<span class="yang_singer_name"><a href="#">G.M.E邓紫棋</a></span>
+ 							</td>
+ 						</tr>
+ 						<tr>
+ 							<td class="yang_music_number music_number_new_other">8</td>
+ 							<td>
+ 									<div class="yang_music_name_other">
+ 									<a href="#">倒数</a>
+ 							</td>
+ 							<td class="yang_music_time">03:49</td>
+ 							<td>
+ 								<span class="yang_singer_name"><a href="#">G.M.E邓紫棋</a></span>
+ 							</td>
+ 						</tr>
+ 						<tr>
+ 							<td class="yang_music_number music_number_new_other">9</td>
+ 							<td>
+ 									<div class="yang_music_name_other">
+ 									<a href="#">倒数</a>
+ 							</td>
+ 							<td class="yang_music_time">03:49</td>
+ 							<td>
+ 								<span class="yang_singer_name"><a href="#">G.M.E邓紫棋</a></span>
+ 							</td>
+ 						</tr>
+ 						<tr>
+ 							<td class="yang_music_number music_number_new_other">10</td>
+ 							<td>
+ 									<div class="yang_music_name_other">
+ 									<a href="#">倒数</a>
+ 							</td>
+ 							<td class="yang_music_time">03:49</td>
+ 							<td>
+ 								<span class="yang_singer_name"><a href="#">G.M.E邓紫棋</a></span>
+ 							</td>
+ 						</tr>
+ 						<tr>
+ 							<td class="yang_music_number music_number_new_other">11</td>
+ 							<td>
+ 									<div class="yang_music_name_other">
+ 									<a href="#">倒数</a>
+ 							</td>
+ 							<td class="yang_music_time">03:49</td>
+ 							<td>
+ 								<span class="yang_singer_name"><a href="#">G.M.E邓紫棋</a></span>
+ 							</td>
+ 						</tr>
+ 						<tr>
+ 							<td class="yang_music_number music_number_new_other">12</td>
+ 							<td>
+ 									<div class="yang_music_name_other">
+ 									<a href="#">倒数</a>
+ 							</td>
+ 							<td class="yang_music_time">03:49</td>
+ 							<td>
+ 								<span class="yang_singer_name"><a href="#">G.M.E邓紫棋</a></span>
+ 							</td>
+ 						</tr>
+ 						<tr>
+ 							<td class="yang_music_number music_number_new_other">13</td>
+ 							<td>
+ 									<div class="yang_music_name_other">
+ 									<a href="#">倒数</a>
+ 							</td>
+ 							<td class="yang_music_time">03:49</td>
+ 							<td>
+ 								<span class="yang_singer_name"><a href="#">G.M.E邓紫棋</a></span>
+ 							</td>
+ 						</tr>
+ 						<tr>
+ 							<td class="yang_music_number music_number_new_other">14</td>
+ 							<td>
+ 									<div class="yang_music_name_other">
+ 									<a href="#">倒数</a>
+ 							</td>
+ 							<td class="yang_music_time">03:49</td>
+ 							<td>
+ 								<span class="yang_singer_name"><a href="#">G.M.E邓紫棋</a></span>
+ 							</td>
+ 						</tr>
+ 						<tr>
+ 							<td class="yang_music_number music_number_new_other">15</td>
+ 							<td>
+ 									<div class="yang_music_name_other">
+ 									<a href="#">倒数</a>
+ 							</td>
+ 							<td class="yang_music_time">03:49</td>
+ 							<td>
+ 								<span class="yang_singer_name"><a href="#">G.M.E邓紫棋</a></span>
+ 							</td>
+ 						</tr>
+ 						<tr>
+ 							<td class="yang_music_number music_number_new_other">16</td>
+ 							<td>
+ 									<div class="yang_music_name_other">
+ 									<a href="#">倒数</a>
+ 							</td>
+ 							<td class="yang_music_time">03:49</td>
+ 							<td>
+ 								<span class="yang_singer_name"><a href="#">G.M.E邓紫棋</a></span>
+ 							</td>
+ 						</tr>
+ 						<tr>
+ 							<td class="yang_music_number music_number_new_other">17</td>
+ 							<td>
+ 									<div class="yang_music_name_other">
+ 									<a href="#">倒数</a>
+ 							</td>
+ 							<td class="yang_music_time">03:49</td>
+ 							<td>
+ 								<span class="yang_singer_name"><a href="#">G.M.E邓紫棋</a></span>
+ 							</td>
+ 						</tr>
+ 						<tr>
+ 							<td class="yang_music_number music_number_new_other">18</td>
+ 							<td>
+ 									<div class="yang_music_name_other">
+ 									<a href="#">倒数</a>
+ 							</td>
+ 							<td class="yang_music_time">03:49</td>
+ 							<td>
+ 								<span class="yang_singer_name"><a href="#">G.M.E邓紫棋</a></span>
+ 							</td>
+ 						</tr>
+ 						<tr>
+ 							<td class="yang_music_number music_number_new_other">19</td>
+ 							<td>
+ 									<div class="yang_music_name_other">
+ 									<a href="#">倒数</a>
+ 							</td>
+ 							<td class="yang_music_time">03:49</td>
+ 							<td>
+ 								<span class="yang_singer_name"><a href="#">G.M.E邓紫棋</a></span>
+ 							</td>
+ 						</tr>
+ 						<tr>
+ 							<td class="yang_music_number music_number_new_other">20</td>
+ 							<td>
+ 									<div class="yang_music_name_other">
+ 									<a href="#">倒数</a>
+ 							</td>
+ 							<td class="yang_music_time">03:49</td>
+ 							<td>
+ 								<span class="yang_singer_name"><a href="#">G.M.E邓紫棋</a></span>
+ 							</td>
+ 						</tr>
+ 						<tr>
+ 							<td class="yang_music_number music_number_new_other">21</td>
+ 							<td>
+ 									<div class="yang_music_name_other">
+ 									<a href="#">倒数</a>
+ 							</td>
+ 							<td class="yang_music_time">03:49</td>
+ 							<td>
+ 								<span class="yang_singer_name"><a href="#">G.M.E邓紫棋</a></span>
+ 							</td>
+ 						</tr>
+ 						<tr>
+ 							<td class="yang_music_number music_number_new_other">22</td>
+ 							<td>
+ 									<div class="yang_music_name_other">
+ 									<a href="#">倒数</a>
+ 							</td>
+ 							<td class="yang_music_time">03:49</td>
+ 							<td>
+ 								<span class="yang_singer_name"><a href="#">G.M.E邓紫棋</a></span>
+ 							</td>
+ 						</tr>
+ 						<tr>
+ 							<td class="yang_music_number music_number_new_other">23</td>
+ 							<td>
+ 									<div class="yang_music_name_other">
+ 									<a href="#">倒数</a>
+ 							</td>
+ 							<td class="yang_music_time">03:49</td>
+ 							<td>
+ 								<span class="yang_singer_name"><a href="#">G.M.E邓紫棋</a></span>
+ 							</td>
+ 						</tr>
+ 						<tr>
+ 							<td class="yang_music_number music_number_new_other">24</td>
+ 							<td>
+ 									<div class="yang_music_name_other">
+ 									<a href="#">倒数</a>
+ 							</td>
+ 							<td class="yang_music_time">03:49</td>
+ 							<td>
+ 								<span class="yang_singer_name"><a href="#">G.M.E邓紫棋</a></span>
+ 							</td>
+ 						</tr>
+ 						<tr>
+ 							<td class="yang_music_number music_number_new_other">25</td>
+ 							<td>
+ 									<div class="yang_music_name_other">
+ 									<a href="#">倒数</a>
+ 							</td>
+ 							<td class="yang_music_time">03:49</td>
+ 							<td>
+ 								<span class="yang_singer_name"><a href="#">G.M.E邓紫棋</a></span>
+ 							</td>
+ 						</tr>
+ 						<tr>
+ 							<td class="yang_music_number music_number_new_other">26</td>
+ 							<td>
+ 									<div class="yang_music_name_other">
+ 									<a href="#">倒数</a>
+ 							</td>
+ 							<td class="yang_music_time">03:49</td>
+ 							<td>
+ 								<span class="yang_singer_name"><a href="#">G.M.E邓紫棋</a></span>
+ 							</td>
+ 						</tr>
+ 						<tr>
+ 							<td class="yang_music_number music_number_new_other">27</td>
+ 							<td>
+ 									<div class="yang_music_name_other">
+ 									<a href="#">倒数</a>
+ 							</td>
+ 							<td class="yang_music_time">03:49</td>
+ 							<td>
+ 								<span class="yang_singer_name"><a href="#">G.M.E邓紫棋</a></span>
+ 							</td>
+ 						</tr>
+ 						<tr>
+ 							<td class="yang_music_number music_number_new_other">28</td>
+ 							<td>
+ 									<div class="yang_music_name_other">
+ 									<a href="#">倒数</a>
+ 							</td>
+ 							<td class="yang_music_time">03:49</td>
+ 							<td>
+ 								<span class="yang_singer_name"><a href="#">G.M.E邓紫棋</a></span>
+ 							</td>
+ 						</tr>
+ 						<tr>
+ 							<td class="yang_music_number music_number_new_other">29</td>
+ 							<td>
+ 									<div class="yang_music_name_other">
+ 									<a href="#">倒数</a>
+ 							</td>
+ 							<td class="yang_music_time">03:49</td>
+ 							<td>
+ 								<span class="yang_singer_name"><a href="#">G.M.E邓紫棋</a></span>
+ 							</td>
+ 						</tr>
+ 						<tr>
+ 							<td class="yang_music_number music_number_new_other">28</td>
+ 							<td>
+ 									<div class="yang_music_name_other">
+ 									<a href="#">倒数</a>
+ 							</td>
+ 							<td class="yang_music_time">03:49</td>
+ 							<td>
+ 								<span class="yang_singer_name"><a href="#">G.M.E邓紫棋</a></span>
+ 							</td>
+ 						</tr>
+ 						<tr>
+ 							<td class="yang_music_number music_number_new_other">29</td>
+ 							<td>
+ 									<div class="yang_music_name_other">
+ 									<a href="#">倒数</a>
+ 							</td>
+ 							<td class="yang_music_time">03:49</td>
+ 							<td>
+ 								<span class="yang_singer_name"><a href="#">G.M.E邓紫棋</a></span>
+ 							</td>
+ 						</tr>
+ 						<tr>
+ 							<td class="yang_music_number music_number_new_other">30</td>
+ 							<td>
+ 									<div class="yang_music_name_other">
+ 									<a href="#">倒数</a>
+ 							</td>
+ 							<td class="yang_music_time">03:49</td>
+ 							<td>
+ 								<span class="yang_singer_name"><a href="#">G.M.E邓紫棋</a></span>
+ 							</td>
+ 						</tr>
+ 						<tr>
+ 							<td class="yang_music_number music_number_new_other">31</td>
+ 							<td>
+ 									<div class="yang_music_name_other">
+ 									<a href="#">倒数</a>
+ 							</td>
+ 							<td class="yang_music_time">03:49</td>
+ 							<td>
+ 								<span class="yang_singer_name"><a href="#">G.M.E邓紫棋</a></span>
+ 							</td>
+ 						</tr>
+ 						<tr>
+ 							<td class="yang_music_number music_number_new_other">32</td>
+ 							<td>
+ 									<div class="yang_music_name_other">
+ 									<a href="#">倒数</a>
+ 							</td>
+ 							<td class="yang_music_time">03:49</td>
+ 							<td>
+ 								<span class="yang_singer_name"><a href="#">G.M.E邓紫棋</a></span>
+ 							</td>
+ 						</tr>
+ 						<tr>
+ 							<td class="yang_music_number music_number_new_other">33</td>
+ 							<td>
+ 									<div class="yang_music_name_other">
+ 									<a href="#">倒数</a>
+ 							</td>
+ 							<td class="yang_music_time">03:49</td>
+ 							<td>
+ 								<span class="yang_singer_name"><a href="#">G.M.E邓紫棋</a></span>
+ 							</td>
+ 						</tr>
+ 						<tr>
+ 							<td class="yang_music_number music_number_new_other">34</td>
+ 							<td>
+ 									<div class="yang_music_name_other">
+ 									<a href="#">倒数</a>
+ 							</td>
+ 							<td class="yang_music_time">03:49</td>
+ 							<td>
+ 								<span class="yang_singer_name"><a href="#">G.M.E邓紫棋</a></span>
+ 							</td>
+ 						</tr>
+ 						<tr>
+ 							<td class="yang_music_number music_number_new_other">35</td>
+ 							<td>
+ 									<div class="yang_music_name_other">
+ 									<a href="#">倒数</a>
+ 							</td>
+ 							<td class="yang_music_time">03:49</td>
+ 							<td>
+ 								<span class="yang_singer_name"><a href="#">G.M.E邓紫棋</a></span>
+ 							</td>
+ 						</tr>
+ 						<tr>
+ 							<td class="yang_music_number music_number_new_other">36</td>
+ 							<td>
+ 									<div class="yang_music_name_other">
+ 									<a href="#">倒数</a>
+ 							</td>
+ 							<td class="yang_music_time">03:49</td>
+ 							<td>
+ 								<span class="yang_singer_name"><a href="#">G.M.E邓紫棋</a></span>
+ 							</td>
+ 						</tr>
+ 						<tr>
+ 							<td class="yang_music_number music_number_new_other">37</td>
+ 							<td>
+ 									<div class="yang_music_name_other">
+ 									<a href="#">倒数</a>
+ 							</td>
+ 							<td class="yang_music_time">03:49</td>
+ 							<td>
+ 								<span class="yang_singer_name"><a href="#">G.M.E邓紫棋</a></span>
+ 							</td>
+ 						</tr>
+ 						<tr>
+ 							<td class="yang_music_number music_number_new_other">38</td>
+ 							<td>
+ 									<div class="yang_music_name_other">
+ 									<a href="#">倒数</a>
+ 							</td>
+ 							<td class="yang_music_time">03:49</td>
+ 							<td>
+ 								<span class="yang_singer_name"><a href="#">G.M.E邓紫棋</a></span>
+ 							</td>
+ 						</tr>
+ 						<tr>
+ 							<td class="yang_music_number music_number_new_other">39</td>
+ 							<td>
+ 									<div class="yang_music_name_other">
+ 									<a href="#">倒数</a>
+ 							</td>
+ 							<td class="yang_music_time">03:49</td>
+ 							<td>
+ 								<span class="yang_singer_name"><a href="#">G.M.E邓紫棋</a></span>
+ 							</td>
+ 						</tr>
+ 						<tr>
+ 							<td class="yang_music_number music_number_new_other">40</td>
+ 							<td>
+ 									<div class="yang_music_name_other">
+ 									<a href="#">倒数</a>
+ 							</td>
+ 							<td class="yang_music_time">03:49</td>
+ 							<td>
+ 								<span class="yang_singer_name"><a href="#">G.M.E邓紫棋</a></span>
+ 							</td>
+ 						</tr> 					
+ 					</tbody>
+ 				</table>
+
+ 			</div>
+ 		</div>
+ 		<div id="hu_food">
+		<div class="hu_food1 clear">
+
+			<dl>
+				<dt class="clear hu_food2">
+					<ul class="clear">
+						<li class="li"><a href=""><span class="xiahuaxian">关于网易</span><span>|</span></a></li>
+						
+						<li><a href=""><span class="xiahuaxian">客户服务</span><span>|</span></a></li>
+						
+						<li><a href=""><span class="xiahuaxian">服务条款</span><span>|</span></a></li>
+						
+						<li><a href=""><span class="xiahuaxian">网站导航</span><span>|</span></a></li>
+					
+						<li><a href=""><span class="xiahuaxian">意见反馈</span><span>|</span></a></li>
+					</ul>
+				</dt>
+				<dd>
+					<ul class="clear">
+						<li class="left">
+							网易公司版权所有&copy;1997-2018  
+						</li>
+						<li>
+							杭州乐读科技有限公司运营:<span>浙网文[2018]3506-263号</span>
+						</li>
+						<li class="left1">
+							违法和不良信息举报电话:0571-89853516
+						</li>
+						<li>
+							举报邮箱:<span>cloucmusicservice@163.com</span>
+						</li>
+					</ul>
+				</dd>
+			</dl>
+
+			<div id="hu_food3">
+			<ul>
+				<li class="foot_li1"><a href="#"></a></li>
+				<li class="foot_li2"><a href="#"></a></li>
+				<li class="foot_li3"><a href="#"></a></li>
+				<li class="foot_li4"><a href="#"></a></li>
+				<li class="foot_li5"><a href="#"></a></li>
+			</ul>
+		    </div>
+		
+		</div>
+	</div>
+</body>
+</html>

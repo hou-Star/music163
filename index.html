@@ -1,0 +1,836 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>网音云音乐</title>
+  <link rel="icon" href="favicon.ico">
+	<style>
+    *{ margin:0; padding:0;}
+	ul,ol,li{ list-style: none;}
+	img{ display: block;}
+	a{ text-decoration: none; color: #b7b7b7;}
+	body,h1,h2,h3,h4{ font-size: 12px; font-weight: normal; }
+    .clear:after{ display: block; content:""; clear:both;}
+    .l{ float: left;}
+	.r{ float: right;}
+	body{background: #f5f5f5}
+         #head{width:100%;}
+        .head_1{height: 69px;background:#242424;border-bottom: 1px #000 solid;}
+        .head_1 .head1_content{width: 1098px;height:69px; margin:0 auto;}
+        .head1_content .head1_logo{width:175px;height:69px;height: 100%; background: url(img01/网易云音乐.jpg) no-repeat 0px 22px;}
+        .head1_content .head1_logo a{width: 175px;height: 100%;float: left;padding-right: 24px;text-indent: -9999px;}
+          .head1_content .head1_liebiao1{}
+          .head1_liebiao1 li{float: left;position: relative;}
+          .head1_liebiao1 li .frist{position: relative;}
+          .head1_liebiao1 .li_1 { width: 94px;height: 69px;color: #b7b7b7;font-weight: bold;cursor:pointer;text-align: center;}
+          .head1_liebiao1 .li_2 { width: 93px;height: 69px;color: #b7b7b7;font-weight: bold;cursor:pointer;text-align: center;}
+          .head1_liebiao1 .li_3 { width: 67px;height: 69px;color: #b7b7b7;font-weight: bold;cursor:pointer;text-align: center;}
+           .head1_liebiao1 .li_4 { width: 65px;height: 69px;color: #b7b7b7;font-weight: bold;cursor:pointer;text-align: center;}
+           .head1_liebiao1 .li_5 { width: 81px;height: 69px;color: #b7b7b7;font-weight: bold;cursor:pointer;text-align: center;}
+
+           .head1_liebiao1 .li_6 { width: 105px;height: 69px;color: #b7b7b7;font-weight: bold;cursor:pointer;text-align: center;}
+           .head1_liebiao1 li a{height: 69px; line-height: 69px;}
+           .head1_liebiao1 li.frist:before{width: 12px;height: 16px;content: "";display: block; background: url(img01/精灵图.png) no-repeat -226px 0px;position: absolute;left: 41px;bottom:-11px;
+           }
+           .head1_liebiao1 li:hover{background-color:black;}
+           .head1_liebiao1 li a:hover{color: white;}
+           .head1_liebiao1 li.frist a{color: white;}
+           .head1_biaodan{position: relative;}
+                 .head1_biaodan .img{position: absolute;left:0px;top: 22px;}  
+                  .head1_biaodan1 {margin-left: 87px;margin-top: 19px;position: relative;}
+                  .head1_biaodan1 input{width: 154px;height: 31px;text-indent: 29px;border-radius: 20px}
+                  .head1_biaodan1 img{position: absolute;left:10px;bottom: 9px;}
+                   .img2{position: relative;}
+                   .img2 a{display: block;font-size: 10px;}
+                   .img2 img{position: absolute;left: 12px;top: 19px;}
+                   .img2 p{position: relative;left: 43px;top: 26px;}
+                   a :hover{color: white;}
+                   .denglu1{overflow: hidden;  width:52px; height:25px;margin-top: 27px;position: relative;}
+                   .denglu1 .denglu2{ font-size: 10px;line-height:14px;padding-right: 26px;position: relative;width:26px;}
+                   .denglu1 .denglu2:after{width: 12px;height: 7px; content: "";display: block;background: url(img01/精灵图.png) no-repeat -228px -60px;position: absolute; left:38px;top:3px;}
+
+                    .denglu1:hover{height: auto;overflow:visible;z-index: 99;}
+                   
+                   .denglu1 ul{line-height: 38px;background:#2b2b2b ;width: 158px;display: block;position: absolute;top: 30px;left: -67px}
+                   .denglu1 ul li{height:38px;font-size: 12px;border-bottom: 1px solid black;border-right: 1px solid black;border-left: 1px solid black;
+                   }
+
+                   .denglu1 ul li{position: relative;float: left;width: 156px}
+                   .denglu1 li a{float: left;position: relative;padding-left:44px;}
+                   .denglu1 .denglu4 a:before{width:10px;height: 14px; content: "";display: block;background: url(img01/toplist.png) no-repeat -3px -2px;position:absolute;left: 20px;top:12px;}
+                   .denglu1 .denglu8 a:before{width:18px;height: 15px; content: "";display: block;background: url(img01/toplist.png) no-repeat -20px -22px;position:absolute;left: 18px;top:13px;}
+                   .denglu1 .denglu7 a:before{width:12px;height: 15px; content: "";display: block;background: url(img01/toplist.png) no-repeat -2px -42px;position:absolute;left: 19px;top:12px;}
+                   .denglu1 .denglu5 a:before{width:14px;height: 16px; content: "";display: block;background: url(img01/toplist.png) no-repeat -20px -41px;position:absolute;left: 18px;top:12px;}
+                   .denglu1 .denglu6 a:before{width:16px;height: 13px; content: "";display: block;background: url(img01/toplist.png) no-repeat 0px -23px;position:absolute;left: 17px;top:13px;}
+                   .denglu1 ul li:hover{background: #353535}
+                   .denglu1 ul  a:hover{color:white;}
+
+                   #head_2{background: #c20c0c;width: 100%;height: 34px;}
+                   .head_3{width: 1098px;height:100%; margin: 0 auto;}
+                   .head_3 ul{margin-left: 197px;}
+                   .head_3 li{float: left;font-size: 12px;line-height: 20px;padding-left: 12px;padding-right: 13px;margin-right: 34px;margin-top: 7px}
+                   .head_3 ul a{color:#ffffff;}
+                    .head_3 ul .active{background: #9b0909}
+                    .head_3 .active a{color: white}
+                    .head_3 ul li:hover{background: #9b0909}
+
+        .container{ width:1101px; margin: 0 auto;}
+		.container-fluid{ width:100%; }
+		#banner{height:336px;background:url(img/banner_bg.jpg) repeat-x;}
+		#banner .banner_main{height:336px;position:relative;}
+		#banner .banner_main .arrowl{width:19px;height:36px;background: url(img/banner_sprite_1.png) no-repeat -9px -372px;position:absolute;left:0;top:50%;margin-top:-19px;cursor:pointer;}
+		#banner .banner_main .arrowr{width:19px;height:36px;background: url(img/banner_sprite_1.png) no-repeat -11px -520px;position:absolute;right:0;top:50%;margin-top:-19px;cursor:pointer;}
+		#banner .banner_main .arrowl:hover{width:37px;height:63px;background:url(img/banner_sprite_1.png) no-repeat 0 -430px;position:absolute;left:-9px;top:50%;margin-top:-31px;}
+		#banner .banner_main .arrowr:hover{width:37px;height:63px;background:url(img/banner_sprite_1.png) no-repeat 0 -578px;position:absolute;right:-9px;top:50%;margin-top:-31px;}
+		#banner .banner_main .banner_main_box{width:984px;height:336px;margin:0 auto;position:relative;}
+		#banner .banner_main .banner_main_boxleft{width:730px;overflow:hidden;}
+		#banner .banner_main .banner_list_img{width:5110px;height:336px;}
+		#banner .banner_main .banner_list_img li{width:730px;height:336px;float:left;}
+		#banner .banner_main .banner_list_dot{width:730px;height:20px;position:absolute;left:0;top:310px;}
+		#banner .banner_main .banner_list_dot ul{text-align:center;}
+		#banner .banner_main .banner_list_dot ul li{display:inline-block;background:url(img/banner_sprite_1.png) no-repeat -4px -350px;width:6px;height:6px;margin-right:17px;cursor:pointer;}
+		#banner .banner_main .banner_list_dot li.active{width:8px;height:7px;background-position:-22px -350px;}
+		#banner .banner_main .banner_main_boxright{width:254px;height:336px;position:absolute;left:730px;top:0;background:url(img/banner_sprite_2.png) no-repeat;}
+		#banner .banner_main .banner_main_boxright .boxright_img{margin-left:19px;margin-top:212px;color:#8d8d8d;line-height: 38px;}
+		#banner .banner_main .banner_main_boxright .shadowl{width:20px;height:336px;background:url(img/banner_sprite_1.png) no-repeat -10px 0;position:absolute;left:-10px;top:0;}
+		#banner .banner_main .banner_main_boxright .shadowr{width:20px;height:336px;background:url(img/banner_sprite_1.png) no-repeat -10px 0;position:absolute;right:-10px;top:0;}
+
+
+
+    #sun{width: 729px;border-left: 1px solid #d4d4d4;border-right: 1px solid #d4d4d4;padding:0 20px;box-sizing:border-box;margin: 20px auto;position:relative; float: left}
+	#yu{width: 689px;height:53px;border-bottom:2px solid #c10d0c;position: relative;}
+	.sy{font-size: 20px;line-height::28px;font-weight: normal;margin-top: 21px;margin-bottom: 5px;text-indent: 34px;margin-right: 20px}
+	.sy a{color: black}
+	.sy:before{content:"";display:block;width:14px;height:14px;background: url(06img/index.png) no-repeat -235px -164px;position:absolute;left: 9px;top:50%;}
+	.sun_nav li{float: left;line-height: 26px;font-size: 12px;margin-top: 21px;margin-bottom: 6px;}
+	.sun_nav a{color: #666666;}
+	.sun_nav .sun_nav_2{margin-left: 14px;margin-right: 13px}
+
+	.sun_nav_1{float:right;line-height: 22px;margin:25px 27px 6px 0;position:relative;}
+	.sun_nav:after{content:"";display: block;width: 8px;height:6px;background:url(06img/index.png) -2px -243px;position: absolute;right:12px;top:35px;}
+	.sun_nav_1 a{font-size: 12px;color:#666666;}
+	
+	.y_tv{width: 890px;position: relative;}
+	.y_tv li{width:140px;height:140px;float: left;margin-top: 20px;margin-right:42px;margin-bottom:74px;position: relative;}
+	.y_tv li p{font-size:14px;line-height: 20px;margin-top: 3px }
+	.y_tv a{ color:#000000;}
+	.y_tv .s_bottom{width:140px;height: 27px;background: rgb(0,0,0,0.5);position:absolute;left: 0;bottom: 0px}
+	.y_tv .s_bottom .y_tv_img:before{content:"";display:block;width:14px;height: 11px;background: url(06img/iconall.png) 0  -24px;position: absolute;left:10px;bottom:8px}
+	.y_tv .s_bottom a:after{content:"";display:block;width: 16px;height: 17px;background:url(06img/iconall.png) 0px 0px;position: absolute;right: 10px;bottom: 5px;}
+	.y_tv .s_bottom a:hover:after{ background-position: 0 -60px;}
+	.y_tv .s_bottom .y_tv_text{font-size: 12px;line-height: 27px;padding-left: 30px;color: #cccccc}
+	.y_tv .s_box p{text-indent: 42px}
+	.y_tv p:hover{text-decoration: underline;}
+	.y_tv .s_box:before{content:"";display: block;width: 35px;height: 15px;background: url(06img/icon.png) -31px -658px;position: absolute;left: 0;bottom: -24px;cursor: pointer;}
+
+	#ys{width: 689px;border-bottom:2px solid #c10d0c;position: relative;}
+	#ys .ys_1{font-size: 20px;line-height::28px;font-weight: normal;margin-top: 21px;margin-bottom: 5px;text-indent: 34px;margin-right: 20px;cursor: pointer;}
+	#ys .ys_1 a{color: block}
+	#ys .ys_1:before{content:"";display:block;width:14px;height:14px;background: url(06img/index.png) no-repeat -235px -164px;position:absolute;left: 9px;top:50%;}
+	#ys .ys_2{line-height: 22px;margin:25px 27px 6px 0;position:relative;}
+	#ys .ys_2:after{content:"";display: block;width: 8px;height:6px;background:url(06img/index.png) -2px -243px;position: absolute;right:-15px;top:50%}
+	#ys .ys_2 a{font-size:12px;color:#666666;}
+
+
+ 	.ys_3{width: 687px;height:186px;background: #f5f5f5;border:1px solid #d3d3d3;padding:1px;margin-top: 20px;position: relative;padding-left: 12px;box-sizing: border-box;;}
+ 	.ys_3:before{content: "";display: block;width: 8px;height:14px;background:url(06img/index.png) -265px -77px;position: absolute;left: 8px;top: 71px;cursor: pointer;}
+ 	.ys_3:after{content: "";display: block;width: 8px;height:14px;background:url(06img/index.png) -307px -77px;position: absolute;right: 8px;top: 71px;cursor: pointer;}
+ 	.ys_3 li{float: left;width: 100px;margin-left: 14px;margin-top: 28px;padding-right: 16px;line-height:20px;position: relative;}
+ 	.ys_3 li div:before{content:"";display: block;width: 118px;height: 100px;background:url(06img/coverall.png) 0 -570px no-repeat;position: absolute;left: 0;top: 0 ;}
+ 	.ys_3 p:hover{text-decoration: underline;}
+ 	.ys_3  li:before{content:"";display: block;width: 105px;height: 18px;background:url(06img/index.png) -260px 0;position: absolute;left: 0;bottom: 26px;z-index: -1px}
+ 	.ys_3 li p{font-size: 12px;cursor: pointer;position: relative;z-index: 1px}
+ 	.ys_3 img{position: relative;z-index: 1px}
+ 	.ys_3 li a:hover:after{content: "";display: block;width: 20px;height:20px;background: url(06img/iconall.png) -1px -86px;float:right;position: absolute;right:20px;bottom: 48px;display:block}
+ 	.ys_4{color: block}
+ 	.ys_5{color: #666666}
+      
+
+ #yang_main{width:689px; border:1px #d3d3d3 solid;border-top:none;border-bottom:none;padding:0 20px 0 20px;padding-bottom: 35px}
+       #yang_main  .yang_toptitle{width:689px;/*margin-top: 39px;*/padding:0 0 3px 33px;border-bottom:2px #c10d0c solid;box-sizing:border-box;overflow::hidden;}
+       .yang_toptitle h2{line-height: 28px;/*font-weight: normal;*/clear:both;float:left;position: relative;}
+       .yang_toptitle h2:before{content:"";display: block;width:14px;height:15px;background: url(05img/雪碧图/index.png) no-repeat -235px -163px;position:absolute;left:-26px;top:7px;}
+       .yang_toptitle a{font-size: 20px;color:#333333;}
+       .yang_toptitle .yang_morelist{float:right;line-height: 28px;padding-right: 27px;position:relative;}
+       .yang_toptitle .yang_morelist:after{content:"";display: block;width: 8px;height:8px;background:url(05img/雪碧图/index.png) -2px -241px;position: absolute;right:12px;top:11px;}
+       .yang_morelist a{font-size: 12px;color:#666666;}
+       .yang_morelist a:hover{text-decoration: underline;}
+
+       #yang_main .main_list{width: 687px;border:1px #d3d3d3 solid;background: #f4f4f4;margin-top: 20px;}
+         .no_line{border-right:none;}
+       .main_list .toprise_area{width:228px;border-right:1px #d3d3d3 solid;float: left;}
+
+       .main_list .toprise_title{width: 228px;padding: 19px 0 20px 19px;box-sizing:border-box;position: relative;}
+
+           /*.toprise_title dt{position: relative;}*/
+       .toprise_title  dt:before{content:"";width:103px;height:15px;background: url(05img/img_bottom.jpg) no-repeat;position: absolute;left:9px;top:99px;}
+       .toprise_title img{float:left;}
+        .toprise_title h3{margin-bottom: 12px;line-height: 14px;}
+       .toprise_title h3 a{font-family:"黑体";font-size:14px;color:#333333;}
+       .toprise_title h3 a:hover{text-decoration: underline;}
+
+       .toprise_title .toprise_text{float: left;margin:6px 0 0 10px;}
+       .toprise_text li{float: left;margin-right: 10px;}
+       .toprise_text  a.play{display:block;width:22px;height: 22px;background: url(05img/雪碧图/index.png) no-repeat -267px -205px;}
+        .toprise_text  a.play:hover{/*display:block;width:22px;height: 22px;*/background: url(05img/雪碧图/index.png) no-repeat -267px -235px;/*text-indent:-9999px;*/}
+       .toprise_text  a.collect{display:block;width:22px;height: 22px;background: url(05img/雪碧图/index.png) no-repeat -300px -205px;}
+       .toprise_text  a.collect:hover{/*display:block;width:22px;height: 22px;*/background: url(05img/雪碧图/index.png) no-repeat -300px -235px;}
+       .toprise_list li{line-height:32px;height:32px;clear:both; }
+       .toprise_list li:nth-of-type(2n+1){background: #e8e8e8;}
+       .toprise_list li a{font-size: 12px;color:#000000;}
+        .toprise_list li a:hover{text-decoration: underline;}
+       .toprise_list span{display:block;font-size:16px;color:#66667b;float:left;text-indent: 29px;margin-right: 12px;}
+       .toprise_list .text_color{color:#c90d0c;}
+       .toprise_list .song_name{float:left;margin-left: }
+       .toprise_list  li:last-of-type{text-indent: 142px;}
+       .toprise_list .text_indent{text-indent: 24px;}
+   
+        #banxin{width: 979px; margin: 0 auto;background-color: white}
+        #xun_yang{float: left;width: 729px;}
+
+
+
+      	#hou_main_right{
+      		float: right;
+		/*	margin-left: 872px;
+			margin-top: 245px;*/
+			width:250px;
+			box-sizing:border-box;
+		}
+		#hou_main_right h3{ height:40px; font-size:12px; line-height:28px; padding-top:10px; box-sizing:border-box; border-bottom:1px #cccccc solid; }
+		#hou_main_right p{  color:#666666; }
+
+		#hou_main_right #hou_entry{ width:248px; height:122px; border:1px white solid; background:url(03img/entry_bg.png) repeat-x; }
+		#hou_main_right #hou_entry p{ font-size:11px; line-height:22px; padding:16px 21px; }
+		#hou_main_right #hou_entry .login{ width:100px; height:30px; box-sizing:border-box; background:url(03img/entry_bg2.png) repeat-x; border:1px #bd0d13 solid; font-size:12px; line-height:28px; text-align:center; border-radius:3px; text-shadow:0 1px 0 #8a060b; margin:0 auto;}
+		#hou_main_right #hou_entry a{ color:white; }
+
+		#hou_main_right #hou_list1{ padding:0 20px 0 20px; border-top:1px solid #b1b1b1; }
+		#hou_main_right #hou_list1 h3{ position:relative; }
+		#hou_main_right #hou_list1 input{ width:210px; height:30px; cursor:pointer; }
+		#hou_main_right #hou_list1 .list{ padding-top:20px; }		
+		#hou_main_right #hou_list1 .list dl{ width:210px; height:62px; box-sizing:border-box; border:1px #e9e9e9 solid; margin-bottom:14px; background:#fafafa; }
+		#hou_main_right #hou_list1 .list dt{ height:60px; float:left; }
+		#hou_main_right #hou_list1 .list img{ width:62px; height:62px; }
+
+		#hou_main_right #hou_list1 .list dd{ height:60px; float:left; font-size:14px; padding-left:14px; }
+		#hou_main_right #hou_list1 .list a{ color:black; line-height:36px; }
+		#hou_main_right #hou_list1 .list p{ font-size:12px; line-height:22px; }
+		#hou_main_right #hou_list1 .seeAll{ position:absolute; right: 0; top:10px; }
+		#hou_main_right #hou_list1 .seeAll a{ font-size:12px; color:#666666;  }	
+
+		#hou_main_right #hou_list2{ padding:0 20px 0 20px; }
+		#hou_main_right #hou_list2{ padding-top:14px; }
+		#hou_main_right #hou_list2 h3{ position:relative; }
+		#hou_main_right #hou_list2 .list{ padding-top:20px; }		
+		#hou_main_right #hou_list2 .list dl{ width:210px; height:40px; box-sizing:border-box; /*border:1px #e9e9e9 solid;*/ margin-bottom:10px; background:-red; }
+		#hou_main_right #hou_list2 .list dt{ height:40px; float:left; }
+		#hou_main_right #hou_list2 .list img{ width:40px; height:40px; }
+
+		#hou_main_right #hou_list2 .list dd{ height:40px; float:left; font-size:12px; padding-left:10px; }
+		#hou_main_right #hou_list2 .list a{ color:black; font-size:12px; line-height:20px; }
+		#hou_main_right #hou_list2 .list a span{ position:relative; }
+		#hou_main_right #hou_list2 .list a span:after{ content:""; width:11px; height:12px; background:url(03img/css_sprite/icon.png) no-repeat; position:absolute; right:-15px; top:3px; }
+		#hou_main_right #hou_list2 .list p{ color:#666666; font-size:12px;  line-height:20px; }
+          
+
+
+
+ 
+
+
+#hu_food{height: 147px;width: 100%;background: #f2f2f2;border-top: 1px solid #d3d3d3}   
+       .hu_food1{width: 983px;height: 100%;margin:0 auto;overflow: hidden;} 
+       .hu_food1 .hu_food2 li{float: left; font-size: 12px;line-height:24px;margin-top: 15px; }
+       .hu_food2 span{padding-right: 12px;}
+       .hu_food2 li a{color: #d0d0d0}
+       .hu_food1 dl{float: left; width: 482px;margin-top: 1px;}
+       .hu_food1 dl li{font-size: 12px;line-height: 24px;}
+       .hu_food1 dd li{float: left;}
+       .hu_food1 dd .left{margin-right: 14px}
+       .hu_food1 dd  .left1{margin-right: 17px;}
+       .hu_food1 dt .xiahuaxian:hover{text-decoration: underline;}
+       .hu_food1 dd span:hover{text-decoration: underline;cursor:pointer;}
+        #hu_food3 {background: red; float: right;width: 417px;margin-top: 22px;}
+       
+        #hu_food3 ul li{float: right;font-size:12px;line-height: 61px;}
+        #hu_food3 li a{position: relative;}
+        #hu_food3 .foot_li1 a:before{content: "";display: block;width: 44px;height: 61px;background: url(img01/cash.png) no-repeat 0px 0px;position: absolute;right:17px;top: 0px }
+        #hu_food3 .foot_li2 a:before{content: "";display: block;width: 44px;height: 60px;background: url(img01/foot_enter.png) no-repeat -68px 0px;position: absolute;right:99px;top: 0px }
+        #hu_food3 .foot_li3 a:before{content: "";display: block;width: 45px;height: 60px;background: url(img01/foot_enter.png) no-repeat -8px 0px;position: absolute;right:189px;top: 0px }
+        #hu_food3 .foot_li4 a:before{content: "";display: block;width: 44px;height: 60px;background: url(img01/foot_enter.png) no-repeat -8px -80px;position: absolute;right:279px;top: 0px }
+        #hu_food3 .foot_li5 a:before{content: "";display: block;width: 50px;height: 60px;background: url(img01/foot_enter.png) no-repeat -65px -80px;position: absolute;right:366px;top: 0px }
+ 	
+                    
+</style>
+</head>
+<body>
+	<div id="head">
+		<div class="head_1 ">
+			   <div class="head1_content clear">
+			     <h1  class="head1_logo l">
+			           <a href="index.html">
+			           网易云音乐
+			           </a>
+			      </h1>
+				
+			   
+		
+			         <ul  class="head1_liebiao1 l">
+				                <li class="li_2 frist"><a href="">我的音乐</a></li>
+				                <li class="li_1 "><a href="#">发现音乐</a></li>
+				                <li class="li_3"><a href="">朋友</a></li>
+				                <li class="li_4"><a href="">商城</a></li>
+				                <li class="li_5"><a href="yinyueren.html" target="_blank">音乐人</a></li>
+				                <li class="li_6"><a href="">下载客户端</a></li>
+				                
+			         </ul>
+			         <ul class="head1_biaodan l">
+                              <li class="img"><img src="img01/hot.jpg" height="13" width="26" alt="">  </li>
+			         	      
+			         </ul>
+			         <ul class="head1_biaodan1 l">
+			         <li class="l">
+			         <label for=""><input type="text" placeholder="音乐/视频/电台/用户"><img src="img01/放大镜.jpg" height="14" width="13" alt=""></label>
+			         </li>
+			         </ul>
+			         <div class="img2 l">
+			         	 <a href=""><img src="img01/摄像.jpg" height="32" width="90" alt="">
+			         	 <p>视频投递</p></a>
+			         </div>
+			         <div class="denglu1 r">
+			        <div class="denglu2 r"><a href="#" >登录</a></div> 
+			         	<ul class="denglu3 clear">
+			         		<li class="denglu4 clear"><a href="">手机号登录</a></li>
+			         		<li class="denglu8 clear"><a href="">微信登录</a></li>
+			         		<li class="denglu5 clear"><a href="">QQ登录</a></li>
+			         		<li class="denglu6 clear"><a href="">新浪微博登录</a></li>
+			         		<li class="denglu7 clear"><a href="">网易邮箱账号登录</a></li>
+			       
+			         	</ul>
+			         	
+			         </div>
+                  </div>
+               
+		          </div>
+		     <div id="head_2">
+		     	<div class="head_3">
+		     		<ul class="clear">
+		     			<li class="active"><a href="index.html">推荐</a></li>
+		     			<li><a href="paihangbang.html">排行榜</a></li>
+		     			<li><a href="gedan.html">歌单</a></li>
+		     			<li><a href="zhubidiantai.html">主播电台</a></li>
+		     			<li><a href="geshou.html">歌手</a></li>
+		     			<li><a href="">新碟上架</a></li>
+		     		</ul>
+		     	</div>
+		     </div>
+		
+	</div>
+	<div id="banner" class="container-fluid">
+		<div class="banner_main container">
+			<div class="banner_main_box">
+				<div class="banner_main_boxleft">
+					<ul class="banner_list_img">
+						<li>
+						<a target="_blank" href="https://music.163.com/#/song?id=1299571000"><img src="img/banner_7.jpg" height="336" width="730" alt=""></a>
+						</li>
+						<li>
+						<a target="_blank" href="https://music.163.com/#/mv?id=5965557"><img src="img/banner_1.jpg" height="336" width="730" alt=""></a>
+						</li>
+						<li>
+						<a target="_blank" href="https://music.163.com/#/song?id=1300094019"><img src="img/banner_2.jpg" height="336" width="730" alt=""></a>
+						</li>
+						<li>
+						<a target="_blank" href="https://music.163.com/#/song?id=1300595109"><img src="img/banner_3.jpg" height="336" width="730" alt=""></a>
+						</li>
+						<li>
+						<a target="_blank" href="http://music.163.com/m/at/tianmibaoji"><img src="img/banner_4.jpg" height="336" width="730" alt=""></a>
+						</li>
+						<li>
+						<a target="_blank" href="https://music.163.com/store/newalbum/detail?id=72073226"><img src="img/banner_5.jpg" height="336" width="730" alt=""></a>
+						</li>
+						<li>
+						<a target="_blank" href="http://music.163.com/m/at/5b6c28581c37c29213984544"><img src="img/banner_6.jpg" height="336" width="730" alt=""></a>
+						</li>
+					</ul>
+					<div class="banner_list_dot">
+						<ul>
+							<li></li>
+							<li></li>
+							<li class="active"></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+						</ul>
+					</div>
+				</div>
+				<div class="banner_main_boxright">
+					<div class="boxright_img">
+					<a target="_blank" href="https://music.163.com/#/download"><img src="img/banner_8.jpg" height="56" width="215" alt=""></a>
+					<p>PC 安卓 iPhone WP iPad Mac 六大客户端</p>
+					</div>
+					<span class="shadowl"></span>
+					<span class="shadowr"></span>
+				</div>	
+			</div>
+			<div class="arrowl"></div>	
+			<div class="arrowr"></div>	
+		</div>
+	</div>
+	<div id="banxin" class="clear">
+	<div id="xun_yang">
+	<div id="sun">
+		<div id="yu">
+			<h2 class="sy l"> <a href="#">热门推荐</a> </h2>
+			<ul class="sun_nav">
+				<li> <a href="#">华语</a> </li>
+				<li class="sun_nav_2">|</li>
+				<li> <a href="#">流行</a> </li>
+				<li class="sun_nav_2">|</li>
+				<li> <a href="#">摇滚</a> </li>
+				<li class="sun_nav_2">|</li>
+				<li> <a href="#">民谣</a> </li>
+				<li class="sun_nav_2">|</li>
+				<li> <a href="#">电子</a> </li>
+			</ul>
+			<div class="sun_nav_1 r">
+				<a href="gedan.html">更多</a>
+			</div>
+		</div>
+		<ul class="y_tv clear">
+			<li>
+				<div>
+					<a href="#"> <img src="06img/01.jpg" height="140" width="140" alt="" title="给你一张2008年的CD">
+					</a>
+				</div>	
+				<div class="s_bottom">
+					<span class="y_tv_img"></span>
+					<span class="y_tv_text">204万</span>
+					<a href="#" title="播放"></a>
+				</div> 
+				 <p> <a href="#">给你一张2008年的CD。</a> </p>
+			</li>
+			<li>
+				<div>
+					<a href="#"> <img src="06img/02.jpg" height="140" width="140" alt="" title="恋爱日记 | 你是我最不知所措的一次浪漫">
+					</a>
+				</div>
+				<div class="s_bottom">
+					<span class="y_tv_img"></span>
+					<span class="y_tv_text">107万</span>
+					<a href="#" title="播放"></a>
+				</div> 
+				<p><a href="#">恋爱日记 | 你是我最不知所措的一次浪漫</a></p>
+			</li>
+			<li>
+				<div>	
+					<a href="#"> <img src="06img/03.jpg" height="140" width="140" alt="" title="Future Bass 绮粲之道">
+					</a>
+				</div>
+				<div class="s_bottom">
+					<span class="y_tv_img"></span>
+					<span class="y_tv_text">16万</span>
+					<a href="#" title="播放"></a>
+				</div> 
+				<p><a href="#">Future Bass 绮粲之道</a></p>
+			</li>
+			<li class="s_box">
+				<div>	
+					<a href="#"> <img src="06img/04.jpg" height="140" width="140" alt="" title="三好人生 — 13命获救! 我们如何做到泰国洞穴营救奇迹">
+					</a>
+				</div>
+				<div class="s_bottom">
+					<span class="y_tv_img"></span>
+					<span class="y_tv_text">19188</span>
+					<a href="#" title="播放"></a>
+				</div> 
+				<p><a href="#">三好人生 — 13命获救! 我们如何做到泰国洞穴营救奇迹</a></p>
+			</li>
+			<li>
+				<div>	
+					<a href="#"> <img src="06img/05.jpg" height="140" width="140" alt="" title="浪漫法兰西 | 塞纳河左岸的青春咖啡馆">
+					</a>
+				</div>
+				<div class="s_bottom">
+					<span class="y_tv_img"></span>
+					<span class="y_tv_text">17万</span>
+					<a href="#" title="播放"></a>
+				</div> 
+				<p><a href="#">浪漫法兰西 | 塞纳河左岸的青春咖啡馆</a></p>
+			</li>
+			<li class="s_box">
+				<div>	
+					<a href="#"> <img src="06img/06.jpg" height="140" width="140" alt="" title="大学生非"妆"不可吗？">
+					</a>
+				</div>
+				<div class="s_bottom">
+					<span class="y_tv_img"></span>
+					<span class="y_tv_text">5030</span>
+					<a href="#" title="播放"></a>
+				</div> 
+				<p><a href="#">大学生非"妆"不可吗？</a></p>
+			</li>
+			<li>
+				<div>	
+					<a href="#"> <img src="06img/07.jpg" height="140" width="140" alt="" title="音符跳跃 | Ukulele弹唱欧美清凉小调">
+					</a>
+				</div>
+				<div class="s_bottom">
+					<span class="y_tv_img"></span>
+					<span class="y_tv_text">16万</span>
+					<a href="#" title="播放"></a>
+				</div> 
+				<p><a href="#">音符跳跃 | Ukulele弹唱欧美清凉小调</a></p>
+			</li>
+			<li class="s_box">
+				<div>	
+					<a href="#"> <img src="06img/08.jpg" height="140" width="140" alt="" title="如果我要离开，你会不会留住我">
+					</a>
+				</div>
+				<div class="s_bottom">
+					<span class="y_tv_img"></span>
+					<span class="y_tv_text">96万</span>
+					<a href="#" title="播放"></a>
+				</div> 
+				<p><a href="#">"如果我要离开，你会不会留住我?"</a></p>
+			</li>
+		</ul>
+		<div id="ys" class="clear">
+			<h2 class="ys_1 l">新碟上架</h2>
+			<div class="ys_2 r"><a href="#">更多</a></div>
+		</div> 
+		<ul class="ys_3 clear">
+			<li>
+				<div>
+					<a href="#"> <img src="06img/11.jpg" height="100" width="100" alt="" title="香蜜沉沉烬如霜 电视原声音乐专辑">
+					</a>	
+				</div>
+				<a href="#" title="播放"></a>
+				<p class="ys_4">香蜜沉沉烬如霜</p>	
+				<p class="ys_5">群星</p>	
+			</li>
+			<li>
+				<div>
+					<a href="#"> <img src="06img/12.jpg" height="100" width="100" alt="" title="THE FIRST II">
+					</a>
+				</div>
+				<a href="#" title="播放"></a>
+				<p class="ys_4">THE FIRST II</p>	
+				<p class="ys_5">乐华七子NEXT</p>	
+			</li>
+			<li>
+				<div>
+					<a href="#"> <img src="06img/13.jpg" height="100" width="100" alt="" title="流星花园电视原声带">
+					</a>
+				</div>
+				<a href="#" title="播放"></a>
+				<p class="ys_4">流星花园电视原…</p>	
+				<p class="ys_5">群星</p>	
+			</li>
+			<li>
+				<div>
+					<a href="#"> <img src="06img/14.jpg" height="100" width="100" alt="" title="孤独她呀">
+					</a>
+				</div>
+				<a href="#" title="播放"></a>
+				<p class="ys_4">孤独她呀</p>	
+				<p class="ys_5">二珂</p>	
+			</li>
+			<li>
+				<div>
+					<a href="#"> <img src="06img/15.jpg" height="100" width="100" alt="" title="平凡的一天">
+					</a>
+				</div>
+				<a href="#" title="播放"></a>
+				<p class="ys_4">平凡的一天</p>	
+				<p class="ys_5">毛不易</p>	
+			</li>
+		</ul>
+	</div>
+
+	
+
+
+	  
+ <div id="yang_main">
+           
+           <div class="yang_toptitle clear">
+             	 <h2><a href="#">榜单</a></h2>
+             	 <div class="yang_morelist"><a href="paihangbang.html">更多</a></div>
+           </div>
+
+           <div class="main_list clear">
+           		<div class="toprise_area">
+	           		<dl class="toprise_title clear">
+	           			<dt>
+	           				<a href="#"><img src="05img/top_rise.jpgt.jpg" height="80" width="80" alt="飙升"></a>
+
+	           			</dt>
+
+	           			<dd class="toprise_text">
+	           				<h3><a href="#">云音乐飙升榜</a></h3>
+	           				<ul>
+	           					<li><a href="#" class="play"></a></li>
+	           					<li><a href="#" class="collect"></a></li>
+	           				</ul>
+	           			</dd>
+	           		</dl>
+
+		           	<ul class="toprise_list clear">
+		           		<li><span class="text_color">1</span><div class="song_name"><a href="#">Hold Me Down(中文版)</a></div></li>
+		           		<li><span class="text_color">2</span><a href="#">倒数</a></li>
+		           		<li><span class="text_color">3</span><div class="song_name"><a href="#">戏精</a></div></li>
+		           		<li><span>4</span><a href="#">可能否</a></li>
+		           		<li><span>5</span><div class="song_name"><a href="#">戒不掉（原声版）</a></div></li>
+		           		<li><span>6</span><a href="#">Whiplash</a></li>
+		           		<li><span>7</span><div class="song_name"><a href="#">Ocean(Don Diablo Remix)</a></div></li>
+		           		<li><span>8</span><a href="#">我的未来式</a></li>
+		           		<li><span>9</span><div class="song_name"><a href="#">一个人去巴黎</a></div></li>
+		           		<li><span class="text_indent">10</span><a href="#">Wanan</a></li>
+		           		<li><a href="#">查看全部&gt</a></li>
+		              			
+		           	</ul>
+		        </div>
+
+		        <div class="toprise_area">
+	           		<dl class="toprise_title clear">
+	           			<dt>
+	           				<a href="#"><img src="05img/new_song.jpg" height="80" width="80" alt="飙升"></a>
+	           			</dt>
+	           			<dd class="toprise_text">
+	           				<h3><a href="#">云音乐新歌榜</a></h3>
+	           				<ul>
+	           					<li><a href="#" class="play"></a></li>
+	           					<li><a href="#" class="collect"></a></li>
+	           				</ul>
+	           			</dd>
+	           		</dl>
+
+		           	<ul class="toprise_list clear">
+		           		<li><span class="text_color">1</span><div class="song_name"><a href="#">星球坠落（live）</a></div></li>
+		           		<li><span class="text_color">2</span><a href="#">陷阱</a></li>
+		           		<li><span class="text_color">3</span><div class="song_n ame"><a href="#">Hold Me Down(中文版)</a></div></li>
+		           		<li><span>4</span><a href="#">卡路里</a></li>
+		           		<li><span>5</span><div class="song_name"><a href="#">倒数</a></div></li>
+		           		<li><span>6</span><a href="#">Animal</a></li>
+		           		<li><span>7</span><div class="song_name"><a href="#">Lover Boy 88</a></div></li>
+		           		<li><span>8</span><a href="#">戏精</a></li>
+		           		<li><span>9</span><div class="song_name"><a href="#">Moonnight</a></div></li>
+		           		<li><span class="text_indent">10</span><a href="#">这是你想要的生活吗</a></li>
+		           		<li><a href="#">查看全部&gt</a></li>
+		           	
+		           	
+		           
+		           
+
+
+		       			
+		           	</ul>
+		        </div>
+		         <div class="toprise_area no_line">
+	           		<dl class="toprise_title clear">
+	           			<dt>
+	           				<a href="#"><img src="05img/self_create.jpg" height="80" width="80" alt="飙升"></a>
+	           			</dt>
+	           			<dd class="toprise_text">
+	           				<h3><a href="#">网易原创歌曲榜</a></h3>
+	           				<ul>
+	           					<li><a href="#" class="play"></a></li>
+	           					<li><a href="#" class="collect"></a></li>
+	           				</ul>
+	           			</dd>
+	           		</dl>
+
+		           	<ul class="toprise_list clear">
+		           		<li><span class="text_color">1</span><div class="song_name"><a href="#">这是你想要的生活吗</a></div></li>
+		           		<li><span class="text_color">2</span><a href="#">难堪</a></li>
+		           		<li><span class="text_color">3</span><div class="song_name"><a href="#">Wolves Ay We</a></div></li>
+		           		<li><span>4</span><a href="#">你能看到我</a></li>
+		           		<li><span>5</span><div class="song_name"><a href="#">这酒馆以后就我一个人来了</a></div></li>
+		           		<li><span>6</span><a href="#">有人</a></li>
+		           		<li><span>7</span><div class="song_name"><a href="#">狂妄</a></div></li>
+		           		<li><span>8</span><a href="#">乘风破浪</a></li>
+		           		<li><span>9</span><div class="song_name"><a href="#">空调西瓜绿豆冰沙</a></div></li>
+		           		<li><span class="text_indent">10</span><a href="#">Baby what you want</a></li>
+		           		<li><a href="geshou.html">查看全部&gt</a></li>
+		           	
+		           	
+		           
+		           
+
+
+		       			
+		           	</ul>
+		        </div>
+		          
+		           		
+           </div>
+   
+               
+		          
+		           		
+           </div>
+           </div>
+<div id="hou_main_right">
+		<div id="hou_entry">
+			<p>登录网易云音乐，可以享受无限收藏的乐趣，并且无限同步到手机</p>
+			<a href="#"><div class="login">用户登录</div></a>
+		</div>
+		<div id="hou_list1">
+			<h3>入驻歌手
+				<p class="seeAll"><a href="#">查看全部 ></a></p>
+			</h3>
+			<div class="list">
+				<dl class="clear">
+					<dt>
+						<img src="03img/list1_1.png" height="62" width="62" alt="">
+					</dt>
+					<dd>
+						<a href="#">张惠妹aMEI</a>
+						<p>台湾歌手张惠妹</p>
+					</dd>
+				</dl>		
+				<dl class="clear">
+					<dt>
+						<img src="03img/list1_2.png" height="62" width="62" alt="">
+					</dt>
+					<dd>
+						<a href="#">Fine乐团</a>
+						<p>独立音乐人</p>
+					</dd>
+				</dl>
+				<dl class="clear">
+					<dt>
+						<img src="03img/list1_3.png" height="62" width="62" alt="">
+					</dt>
+					<dd>
+						<a href="#">禹晓利</a>
+						<p>民谣歌手，中国现...</p>
+					</dd>
+				</dl>	
+				<dl class="clear">
+					<dt>
+						<img src="03img/list1_4.png" height="62" width="62" alt="">
+					</dt>
+					<dd>
+						<a href="#">音乐人赵雷</a>
+						<p>民谣歌手</p>
+					</dd>
+				</dl>
+				<dl class="clear">
+					<dt>
+						<img src="03img/list1_5.png" height="62" width="62" alt="">
+					</dt>
+					<dd>
+						<a href="#">王三溥</a>
+						<p>音乐人</p>
+					</dd>
+				</dl>					
+			</div>			
+			<input type="button" value="申请成为网易音乐人">
+		</div>
+		<div id="hou_list2">
+			<h3>热门主播</h3>
+			<div class="list">
+				<dl class="clear">
+					<dt>
+						<img src="03img/list2_1.png" alt="">
+					</dt>
+					<dd>
+						<a href="#"><span>陈立</span></a>
+						<p>心理学家、美食家陈立教授</p>
+					</dd>
+				</dl>		
+				<dl class="clear">
+					<dt>
+						<img src="03img/list2_2.png" alt="">
+					</dt>
+					<dd>
+						<a href="#"><span>DJ艳秋</span></a>
+						<p>著名音乐节目主持人</p>
+					</dd>
+				</dl>
+				<dl class="clear">
+					<dt>
+						<img src="03img/list2_3.png" alt="">
+					</dt>
+					<dd>
+						<a href="#"><span>国家大剧院古典音乐频道</span></a>
+						<p>国家大剧院古典音乐官方</p>
+					</dd>
+				</dl>	
+				<dl class="clear">
+					<dt>
+						<img src="03img/list2_4.png" alt="">
+					</dt>
+					<dd>
+						<a href="#"><span>谢谢收听</span></a>
+						<p>南京电台主持人王罄</p>
+					</dd>
+				</dl>
+				<dl class="clear">
+					<dt>
+						<img src="03img/list2_5.png" alt="">
+					</dt>
+					<dd>
+						<a href="#"><span>DJ晓苏</span></a>
+						<p>独立DJ，CRI环球旅游广播...</p>
+					</dd>
+				</dl>					
+			</div>
+		</div>
+	</div>
+
+</div>
+	<div id="hu_food">
+		<div class="hu_food1 clear">
+
+			<dl>
+				<dt class="clear hu_food2">
+					<ul class="clear">
+						<li class="li"><a href=""><span class="xiahuaxian">关于网易</span><span>|</span></a></li>
+						
+						<li><a href=""><span class="xiahuaxian">客户服务</span><span>|</span></a></li>
+						
+						<li><a href=""><span class="xiahuaxian">服务条款</span><span>|</span></a></li>
+						
+						<li><a href=""><span class="xiahuaxian">网站导航</span><span>|</span></a></li>
+					
+						<li><a href=""><span class="xiahuaxian">意见反馈</span><span>|</span></a></li>
+					</ul>
+				</dt>
+				<dd>
+					<ul class="clear">
+						<li class="left">
+							网易公司版权所有&copy;1997-2018  
+						</li>
+						<li>
+							杭州乐读科技有限公司运营:<span>浙网文[2018]3506-263号</span>
+						</li>
+						<li class="left1">
+							违法和不良信息举报电话:0571-89853516
+						</li>
+						<li>
+							举报邮箱:<span>cloucmusicservice@163.com</span>
+						</li>
+					</ul>
+				</dd>
+			</dl>
+
+			<div id="hu_food3">
+			<ul>
+				<li class="foot_li1"><a href="#"></a></li>
+				<li class="foot_li2"><a href="#"></a></li>
+				<li class="foot_li3"><a href="#"></a></li>
+				<li class="foot_li4"><a href="#"></a></li>
+				<li class="foot_li5"><a href="#"></a></li>
+			</ul>
+		    </div>
+		
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>网易音乐人 - 欢迎所有音乐妄想</title>
+	<link rel="stylesheet" href="Chen_css/Chen_head.css">
+	<link rel="stylesheet" href="Chen_css/Chen_body.css">
+	<link rel="icon" href="favicon.ico">
+	<style>
+	/*定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸*/
+::-webkit-scrollbar
+{
+	width: 16px;
+	height: 16px;
+	background-color: #F5F5F5;
+}
+ 
+/*定义滚动条轨道 内阴影+圆角*/
+::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	background-color: #F5F5F5;
+}
+ 
+/*定义滑块 内阴影+圆角*/
+::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #555;
+}
+
+/*--------过度图4-----*/
+/*	.Chen_tu4 .Chen_tu4_content .Chen_tu4_man1{transition-property:all;transition-duration:.5s;}*/
+/*-----------坠下动画--------*/
+/*		.Chen_body .Chen_b1_photo_ul img{display: block;
+										animation-name:tu1moive;
+										animation-duration:1.3s;
+										animation-iteration-count:infinite;
+										animation-timing-function:linear;}
+		@keyframes tu1moive{
+		0%{transform:translate(0,-20px);}
+		25%{}
+		50%{}
+		75%{}
+		100%{transform:translate(0,0px);}}*/
+
+/*--------------------------呼吸灯------------------------------------*/
+	.Chen_body .Chen_b1_photo_ul img{ position:relative; width:100px; 
+		height:10px; margin:90px auto; line-height:40px;
+		border:1px solid #000; border-radius:50%; color:#000; font-size:20px; text-align:center;
+		cursor:pointer; box-shadow:0 1px 2px rgba(255,255,255.3); overflow:hidden;
+		background-image: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#fff));
+	    animation-timing-function: ease-in-out;
+	    animation-name: smile;
+	    animation-duration: 2000ms;
+	    animation-iteration-count: infinite;
+	    animation-direction: alternate;
+}
+@keyframes smile {
+    0% { opacity: 0; box-shadow:0 1px 2px rgba(255,255,255,0.1);}
+    100% { opacity: 1; border:1px solid rgba(255,255,255,1); box-shadow:0 1px 30px rgba(255,255,255,1);}
+}
+/*--------------------------呼吸灯------------------------------------*/
+
+/*-----------------------------top呼吸-------------------------------------*/
+	.Chen_top1{border-radius:50%; transition-duration:2s;
+				animation-name:tophuxi;
+				animation-duration:2s;
+				animation-iteration-count:infinite;
+				}
+	@keyframes tophuxi{
+		0%{text-shadow:0 0 0 #cd2353;}
+		30%{text-shadow:0 0 12px #cd2353;}
+		75%{text-shadow:0 0 48px #cd2353;}
+		100%{text-shadow:0 0 80px #cd2353;}
+	}
+
+
+
+
+
+/*-----------------------------top呼吸-------------------------------------*/
+
+	</style>
+</head>
+<body>
+	<div class="Chen_bigkj">
+		<div class="Chen_kj Chenclear">
+
+			<div class="Chen_head Chenclear">
+
+				<div class="Chen_head_img Chenl">
+<!-- =================重要！！！！！！！============================ -->
+					<a href="index.html">
+<!-- =================重要！！！！！！！============================ -->
+						<img src="04img/30.png" alt="">
+					</a>
+				</div>
+
+				<div class="Chen_head_ul ">
+
+					<ul class="Chen_head_ul1 Chenl">
+						<li class="Chen_head_li1 Chen_active"><a href="">首页</a></li>
+						<li class="Chen_head_li2"><a href="">石头计划</a></li>
+						<li class="Chen_head_li3"><a href="">个人中心</a></li>
+						<li class="Chen_head_li4"><a href="">常见问题</a></li>
+					</ul>
+					
+				</div>
+
+				<div class="Chen_login">
+					您还未登陆，请先 <a href="#">登陆</a>
+				</div>
+
+				<div class="Chen_slogo">
+					<a href="#">加入音乐人</a>
+				</div>
+			
+			</div>
+
+		</div>
+
+<!-- -----------------------------------tu1----------------------------------------------- -->
+			<div class="Chen_body" id="Chen_n1">
+
+				<div class="Chen_b1_bg">
+					<img src="04img/23.png" alt="">
+				</div>
+
+				<div class="Chen_b1_text1">
+					<a href="#">现在加入</a>
+				</div>
+
+				<div class="Chen_b1_text2">
+					<a href="#">I'm Not Chinese Artist ></a>
+				</div>
+
+				<div class="Chen_b1_photo">
+
+					<ul class="Chen_b1_photo_ul Chenclear">
+						<li class="Chen_b1_photo_li1"><a href="#m1"><img src="04img/31_1.png" alt=""></a></li>
+						<li class="Chen_b1_photo_li2"><a href="#m2"><img src="04img/32_2.png" alt=""></a></li>
+						<li class="Chen_b1_photo_li3"><a href="#m3"><img src="04img/33_3.png" alt=""></a></li>
+					</ul>
+
+				</div>
+
+			</div>
+<!-- -----------------------------------tu2----------------------------------------------- -->
+			<div class="Chen_tu2" id="m1">
+					<div class="Chen_tu2_bg">
+						<div class="Chen_tu2_content">
+							<h2>自助式作品管理</h2><br class="Chen_br">
+							<ul>
+								<li class="Chen_tu2_li1">
+									<img src="04img/34.png" alt="">
+									<h3>绿色通道，快速发布</h3>
+									<p>专属上传通道，发布即上线，<br>让您的作品第一时间和粉丝见面</p>
+								</li>
+								<li class="Chen_tu2_li2">
+									<img src="04img/35.png" alt="">
+									<h3>透明、直观的数据报表</h3>
+									<p>每日更新作品数据、粉丝数据，<br>帮助您更好的运营自己</p>
+								</li>
+								<li class="Chen_tu2_li3">
+									<img src="04img/36.png" alt="">
+									<h3>简单易用的作品管理</h3>
+									<p>从封面、曲风到歌词编辑，<br>强大又好用的作品管理</p>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+<!-- -----------------------------------tu3-------------------------------------------- -->
+				<div class="Chen_tu3" id="m2" >
+					<div class="Chen_tu3_bg">
+						<div class="Chen_tu3_content">
+							<h2>多维度曝光</h2>
+							<div class="Chen_t_c_p">
+							<p>您安心做好音乐，剩下的交给我们</p>
+							</div>
+							<ul>
+
+								<li class="Chen_tu2_li1">
+								<p>赵雷《无法长大》销量破<br>20万，创独立音乐全网新<br>标杆</p>							
+								</li>
+								<li class="Chen_tu2_li2">
+								<p>石头计划落地，向所有音<br>乐人开通赞赏</p>									
+								</li>
+								<li class="Chen_tu2_li3">
+								<p>发布《中国独立音乐人生<br>存现状报告》</p>								
+								</li>
+								<li class="Chen_tu2_li4">
+								<p>李志《在每一条伤心的应<br>天大街上》两天销售额破<br>百万创纪录</p>						
+								</li>
+							</ul>
+							<p class="Chen_last_p">从线上的专属主页、原创榜单、歌曲推荐，到线下的Live巡演，专辑制作、资金支持，<br>
+我们倾尽全力为有实力的原创音乐人提供一系列推广扶持计划，只希望您可以更专注于做好音乐。</p>
+						</div>
+					</div>
+				</div>
+<!-- -----------------------------------tu4----------------------------------------------- -->
+				<div class="Chen_tu4" id="m3">
+					<div class="Chen_tu4_bg">
+						<div class="Chen_tu4_content">
+							<h2>丰富的变现模式</h2><br class="Chen_br">
+							<div class="Chen_t_c_p2">
+							<p>除了加入会员项目、售卖数字专辑外，您还可以通过开通赞赏、售卖周边获取额外收入</p>
+							</div>
+							<ul>
+								<li class="Chen_tu4_li1">
+								<div class="Chen_tu4_man1"></div>
+								<p>专辑累计销量227785张</p>
+								
+								</li>
+								<li class="Chen_tu4_li2">
+								<div class="Chen_tu4_man2"></div>
+								<p>专辑累计销量303196张</p>
+								
+								</li>
+								<li class="Chen_tu4_li3">
+								<div class="Chen_tu4_man3"></div>
+								<p>专辑累计销量127765张</p>
+									
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+<!-- -----------------------------------tu5--------------------------------------- -->
+				<div class="Chen_tu5">
+					<div class="Chen_tu5_bg">
+						<div class="Chen_tu5_content">
+							<h2>业内首创音乐人指数</h2><br class="Chen_br">
+						
+							<h3>音乐人指数是网易云音乐针对音乐人推出的一项综合指标，以直观的<br>分数形式体现音乐人在平台上的影响力，指数越高，享受的权益也越多</h3>
+							<div class="Chen_tu5_bot">
+								<a href=""><img src="04img/52.png" alt=""></a>
+							</div>
+						</div>
+					</div>
+				</div>
+<!-- -----------------------------------tu7--------------------------------------- -->
+				<div class="Chen_tu7">
+					<div class="Chen_tu7_bg">
+						<div class="Chen_tu7_content">
+							<h2>我们在这里等您</h2><br class="Chen_br">
+							<div class="Chen_t_c_p3">
+							<p>入驻音乐人20000+ 上传作品数400000+</p>
+							<ul>
+								<li>
+								<div class="Chen_bigbox">
+									<div class="Chen_font">
+										<p>粉丝：11万<br>作品：22万</p>
+									</div>
+									<div class="Chen_7_box"><img src="04img/56.png" alt=""></div>
+									<div class="Chen_bt"></div>
+									<a href=""><img src="04img/661.png" alt=""></a>
+								</div>
+								<p class="bigbox_p">广东雨神</p>
+								</li>
+
+								<li>
+								<div class="Chen_bigbox">
+									<div class="Chen_font">
+										<p>粉丝：18万<br>作品：12万</p>
+									</div>
+									<div class="Chen_7_box"><img src="04img/56.png" alt=""></div>
+									<div class="Chen_bt"></div>
+									<a href=""><img src="04img/662.png" alt=""></a>
+								</div>	
+								<p class="bigbox_p">switch godLe$</p>		
+								</li>
+
+								<li>
+								<div class="Chen_bigbox">
+									<div class="Chen_font">
+										<p>粉丝：5万<br>作品：15万</p>
+									</div>
+									<div class="Chen_7_box"><img src="04img/56.png" alt=""></div>	
+									<div class="Chen_bt"></div>
+									<a href=""><img src="04img/663.png" alt=""></a>
+								</div>
+								<p class="bigbox_p">KT</p>
+								</li>
+
+								<li>
+								<div class="Chen_bigbox">
+									<div class="Chen_font">
+										<p>粉丝：22万<br>作品：12万</p>
+									</div>
+									<div class="Chen_7_box"><img src="04img/56.png" alt=""></div>	
+									<div class="Chen_bt"></div>
+									<a href=""><img src="04img/664.png" alt=""></a>
+								</div>
+								<p class="bigbox_p">羽肿</p>
+								</li>
+
+								<li>
+								<div class="Chen_bigbox">
+									<div class="Chen_font">
+										<p>粉丝：52万<br>作品：98万</p>
+									</div>
+									<div class="Chen_7_box"><img src="04img/56.png" alt=""></div>	
+									<div class="Chen_bt"></div>
+									<a href=""><img src="04img/665.png" alt=""></a>
+								</div>
+								<p class="bigbox_p">萧忆情Alex</p>
+								</li>
+
+								<li>
+								<div class="Chen_bigbox">
+									<div class="Chen_font">
+										<p>粉丝：9万<br>作品：41万</p>
+									</div>
+									<div class="Chen_7_box"><img src="04img/56.png" alt=""></div>	
+									<div class="Chen_bt"></div>
+									<a href=""><img src="04img/666.png" alt=""></a>
+								</div>
+								<p class="bigbox_p">曲肖冰</p>
+								</li>
+
+							</ul>
+
+							</div>
+
+							<div class="Chen_tu7_text1">
+								<a href="#">现在加入</a>
+							</div>
+						</div>
+					</div>	
+				</div>
+<!-- --------------------------------------尾巴-------------------------------------- -->
+			<div class="Chen_foot">
+				<div class="Chen_foot_ul1">
+					<ul>
+						<li><a href="">关于网易</a>&nbsp;&nbsp;|&nbsp;&nbsp;</li>
+						<li><a href="">客户服务</a>&nbsp;&nbsp;|&nbsp;&nbsp;</li>
+						<li><a href="">服务条款</a>&nbsp;&nbsp;|&nbsp;&nbsp;</li>
+						<li><a href="">网站导航</a>&nbsp;&nbsp;|&nbsp;&nbsp;</li>
+						<li><a href="">意见反馈</a></li>
+					</ul>
+				</div>
+				<p class="Chen_foot_p1">网易公司版权所有©1997-2018&nbsp;&nbsp;&nbsp;杭州乐读科技有限公司运营：<a href="">浙网文[2015] 0415-135号</a></p>
+				<div class="Chen_foot_ul2">
+					<ul>
+						<li><a href=""></a></li>
+						<li><a href=""></a></li>
+						<li><a href=""></a></li>
+						<li><a href=""></a></li>
+					</ul>
+				</div>
+			</div>
+
+			<!-- ----------------固定top----------------- -->
+			
+	</div>
+	<div class="Chen_top1">
+				<a href="#Chen_n1">TOP</a>
+			</div>
+</body>
+</html>
